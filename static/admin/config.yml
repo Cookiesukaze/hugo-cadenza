@@ -54,6 +54,7 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false, required: false, hint: "将此文章标记为精选，显示在首页"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -68,6 +69,7 @@ collections:
       - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false, required: false, hint: "将此文档标记为精选，显示在首页"}
       - {label: "Weight", name: "weight", widget: "number", required: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
