@@ -1,31 +1,31 @@
-baseURL = 'https://example.org/'
-languageCode = 'zh-cn'
-defaultContentLanguage = 'zh'
-title = 'My Custom Hugo Site'
-theme = 'MyCustomTheme'
+baseURL = "https://example.org/"
+title = "My Custom Hugo Site"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+theme = "MyCustomTheme"
 
-# 启用搜索索引生成
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
-# Main sections for homepage
 [params]
-  mainSections = ['portfolio', 'docs']
+mainSections = ["portfolio", "docs"]
 
-  # Home info
-  [params.homeInfo]
-    title = "Welcome to My Custom Hugo Site"
-    description = "A minimalist black, white, and gray themed site showcasing my portfolio and technical documentation."
+[params.homeInfo]
+title = "Welcome to My Custom Hugo Site"
+description = "A minimalist black, white, and gray themed site showcasing my portfolio and technical documentation."
 
-  # Social icons
-  [[params.socialIcons]]
-    name = "GitHub"
-    url = "https://github.com/"
+[[params.socialIcons]]
+name = "GitHub"
+url = "https://github.com/"
 
-  [[params.socialIcons]]
-    name = "Twitter"
-    url = "https://twitter.com/"
+[[params.socialIcons]]
+name = "Twitter"
+url = "https://twitter.com/"
 
-  [[params.socialIcons]]
-    name = "LinkedIn"
-    url = "https://linkedin.com/"
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://linkedin.com/"
+
+["params.homeInfo"]
+description = "^ w ^"
+title = "hello"
