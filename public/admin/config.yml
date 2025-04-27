@@ -13,6 +13,35 @@ public_folder: "/images/uploads" # 上传的媒体文件的公共URL
 
 # 内容集合
 collections:
+  - name: "settings"
+    label: "网站设置"
+    files:
+      - file: "hugo.toml"
+        label: "基本设置"
+        name: "general"
+        format: "toml"
+        fields:
+          - {label: "网站标题", name: "title", widget: "string"}
+          - {label: "语言代码", name: "languageCode", widget: "string"}
+          - {label: "默认内容语言", name: "defaultContentLanguage", widget: "string"}
+          - label: "参数"
+            name: "params"
+            widget: "object"
+            fields:
+              - {label: "主要区域", name: "mainSections", widget: "list"}
+              - label: "主页信息"
+                name: "homeInfo"
+                widget: "object"
+                fields:
+                  - {label: "欢迎标题", name: "title", widget: "string"}
+                  - {label: "网站描述", name: "description", widget: "text"}
+              - label: "社交图标"
+                name: "socialIcons"
+                widget: "list"
+                fields:
+                  - {label: "名称", name: "name", widget: "string"}
+                  - {label: "链接", name: "url", widget: "string"}
+
   - name: "portfolio" # 用于routes的名称，例如/admin/collections/portfolio
     label: "Portfolio" # UI中显示的名称
     folder: "content/portfolio" # 存储文件的文件夹路径

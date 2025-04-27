@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on My Custom Hugo Site</title>
-    <link>http://localhost:33439/tags/examples/</link>
+    <link>http://localhost:1313/tags/examples/</link>
     <description>Recent content in Examples on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:33439/tags/examples/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图片展示示例</title>
-      <link>http://localhost:33439/docs/image-examples/</link>
+      <link>http://localhost:1313/docs/image-examples/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:33439/docs/image-examples/</guid>
+      <guid>http://localhost:1313/docs/image-examples/</guid>
       <description>图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。&#xA;单张图片折叠 以下是单张图片折叠的示例：&#xA;▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。&#xA;Go 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：&#xA;▼ 编程语言标志集 Python JavaScript C&amp;#43;&amp;#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：&#xA;{{&amp;lt; image-fold title=&amp;#34;图片标题&amp;#34; src=&amp;#34;图片URL&amp;#34; alt=&amp;#34;替代文本&amp;#34; caption=&amp;#34;图片说明&amp;#34; &amp;gt;}} 可选的图片描述文本（支持Markdown格式） {{&amp;lt; /image-fold &amp;gt;}} 如果希望默认展开，可以添加 open=true 参数。&#xA;图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：</description>
     </item>
     <item>
       <title>Markdown 示例</title>
-      <link>http://localhost:33439/docs/markdown-examples/</link>
+      <link>http://localhost:1313/docs/markdown-examples/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:33439/docs/markdown-examples/</guid>
+      <guid>http://localhost:1313/docs/markdown-examples/</guid>
       <description>Markdown 示例 这个页面展示了各种 Markdown 格式和特殊功能的示例。&#xA;折叠式内容块 以下是折叠式内容块的示例，支持多种颜色选项：&#xA;▶ 安装为 Git 子模块 克隆仓库到您的 Git 项目中： git submodule add https://github.com/username/theme.git themes/themename 初始化和更新子模块： git submodule init git submodule update ▶ 安装为 Hugo 模块 初始化 Hugo 模块系统： hugo mod init github.com/username/yourproject 在 config.toml 中添加主题： [module] [[module.imports]] path = &amp;#34;github.com/username/theme&amp;#34; 运行 Hugo 以下载模块： hugo ▼ 手动安装 下载最新版本的主题源代码。下载链接 解压缩归档文件，将文件夹重命名为 themename 并移动到 themes/ 目录中，位于您的 Hugo 项目的根文件夹中。 继续设置主题配置文件。 更多颜色选项 折叠块支持多种颜色选项，您可以通过 color 参数指定：&#xA;▶ 紫色示例 这是一个紫色边框的折叠块。 ▶ 橙色示例 这是一个橙色边框的折叠块。 ▶ 青色示例 这是一个青色边框的折叠块。 ▶ 黄色示例 这是一个黄色边框的折叠块。 ▶ 粉色示例 这是一个粉色边框的折叠块。 ▶ 灰色示例 这是一个灰色边框的折叠块。 基本 Markdown 格式 文本格式 斜体文本 和 粗体文本</description>
     </item>
     <item>
       <title>代码示例</title>
-      <link>http://localhost:33439/docs/code-examples/</link>
+      <link>http://localhost:1313/docs/code-examples/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:33439/docs/code-examples/</guid>
+      <guid>http://localhost:1313/docs/code-examples/</guid>
       <description>代码示例 这个页面展示了不同编程语言的代码示例，用于测试代码块的样式。&#xA;HTML 示例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;HTML Example&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;Welcome to My Website&amp;lt;/h1&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main&amp;gt; &amp;lt;section&amp;gt; &amp;lt;h2&amp;gt;About Us&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;This is a paragraph about our company.&amp;lt;/p&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;p&amp;gt;&amp;amp;copy; 2023 My Company&amp;lt;/p&amp;gt; &amp;lt;/footer&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS 示例 /* Basic reset */ * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.</description>
     </item>
   </channel>
