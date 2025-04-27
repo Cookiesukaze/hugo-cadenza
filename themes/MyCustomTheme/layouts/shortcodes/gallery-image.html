@@ -1,0 +1,8 @@
+<div class="gallery-image-item">
+    <figure class="gallery-image-figure">
+        <img src="{{ .Get "src" }}" alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | default "图片" }}{{ end }}" class="gallery-image-img" />
+        {{ with .Get "caption" }}
+        <figcaption class="gallery-image-caption">{{ . }}</figcaption>
+        {{ end }}
+    </figure>
+</div>

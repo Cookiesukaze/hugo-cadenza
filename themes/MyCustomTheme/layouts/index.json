@@ -1,0 +1,38 @@
+[
+  {{- $regularPages := where .Site.RegularPages "Type" "not in" (slice "page") -}}
+  {{- $sectionPages := where .Site.Pages "Kind" "section" -}}
+  {{- $pages := $regularPages | append $sectionPages -}}
+  {{- $pagesCount := len $pages -}}
+
+  {{- range $index, $page := $pages -}}
+    {
+      "title": {{ $page.Title | jsonify }},
+      "permalink": {{ $page.Permalink | jsonify }},
+      "summary": {{ $page.Summary | plainify | jsonify }},
+      "content": {{ $page.Content | plainify | jsonify }},
+      "date": {{ $page.Date | jsonify }},
+      "lastmod": {{ $page.Lastmod | jsonify }},
+      "section": {{ $page.Section | jsonify }},
+      "type": {{ $page.Type | jsonify }},
+      "kind": {{ $page.Kind | jsonify }},
+      "path": {{ $page.Path | jsonify }},
+      "relpermalink": {{ $page.RelPermalink | jsonify }},
+      "parent": {{ with $page.Parent }}{{ .Title | jsonify }}{{ else }}""{{ end }},
+      "ancestors": [
+        {{- range $aindex, $ancestor := $page.Ancestors -}}
+          {"title": {{ $ancestor.Title | jsonify }}, "url": {{ $ancestor.RelPermalink | jsonify }}}{{ if lt $aindex (sub (len $page.Ancestors) 1) }},{{ end }}
+        {{- end -}}
+      ],
+      "categories": [
+        {{- range $cindex, $category := $page.Params.categories -}}
+          {{ $category | jsonify }}{{ if lt $cindex (sub (len $page.Params.categories) 1) }},{{ end }}
+        {{- end -}}
+      ],
+      "tags": [
+        {{- range $tindex, $tag := $page.Params.tags -}}
+          {{ $tag | jsonify }}{{ if lt $tindex (sub (len $page.Params.tags) 1) }},{{ end }}
+        {{- end -}}
+      ]
+    }{{ if lt $index (sub $pagesCount 1) }},{{ end }}
+  {{- end -}}
+]

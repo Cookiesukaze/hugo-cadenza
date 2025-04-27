@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Guide - My Custom Hugo Site</title>
+    
+    <link rel="stylesheet" href="/css/main.min.36a4d4606732d5d0635a1c043491dddad62e24f253dd0c040ab2d6518d267937.css">
+</head>
+<body class="single">
+    <div class="container">
+        
+
+        <main class="main">
+            
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ Menu</button>
+<div class="article-container">
+    
+    <aside class="article-menu">
+        <div class="article-menu-content">
+            <div class="site-title-container">
+                <h2 class="site-title"><a href="/">My Custom Hugo Site</a></h2>
+            </div>
+            <div class="menu-search">
+                <input type="text" id="menu-search-input" placeholder="Search in this section...">
+            </div>
+
+            <div class="menu-content">
+                
+                
+                <ul class="menu-list">
+                    
+                    <li class="menu-item menu-item-parent">
+                        <a href="/docs/programming/frontend/">Frontend Development</a>
+                    </li>
+                    
+                    
+                    <li class="menu-item menu-item-child active">
+                        <a href="/docs/programming/frontend/css/">CSS Styling Guide</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-child">
+                        <a href="/docs/programming/frontend/javascript/">JavaScript Basics</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    
+    <article class="article-content">
+        <header class="article-header">
+            <h1 class="article-title">CSS Styling Guide</h1>
+            <div class="article-meta">
+                <span class="article-date">
+                    <span class="article-date-icon"></span>
+                    Created: March 15, 2023
+                    
+                </span>
+                
+                <span class="article-tags">
+                    <span class="article-tags-icon"></span>
+                    
+                    <a href="/tags/css">css</a>
+                    
+                    <a href="/tags/frontend">frontend</a>
+                    
+                    <a href="/tags/web">web</a>
+                    
+                </span>
+                
+                <span class="article-wordcount">
+                    <span class="article-wordcount-icon"></span>
+                    259 words
+                </span>
+            </div>
+        </header>
+        <div class="article-body">
+            <h1 id="css-styling-guide">CSS Styling Guide</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML. CSS is designed to enable the separation of presentation and content.</p>
+<h2 id="selectors">Selectors</h2>
+<p>CSS selectors define which elements to style:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Element selector */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">blue</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Class selector */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">highlight</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">yellow</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* ID selector */</span>
+</span></span><span style="display:flex;"><span>#header {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Attribute selector */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">input</span><span style="color:#f92672">[</span><span style="color:#f92672">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span><span style="color:#f92672">]</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">gray</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="box-model">Box Model</h2>
+<p>The CSS box model describes the rectangular boxes generated for elements:</p>
+<ul>
+<li>Content: The actual content of the element</li>
+<li>Padding: Space between the content and the border</li>
+<li>Border: A line around the padding</li>
+<li>Margin: Space outside the border</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="flexbox-and-grid">Flexbox and Grid</h2>
+<p>Modern CSS layout systems:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Flexbox */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">space-between</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Grid */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">grid-container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">grid-template-columns</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>fr);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">gap</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="responsive-design">Responsive Design</h2>
+<p>Media queries allow for responsive designs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Base styles */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Tablet styles */</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">768px</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">750</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Desktop styles */</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">1200px</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">1170</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="css-variables">CSS Variables</h2>
+<p>Custom properties (variables) in CSS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>:<span style="color:#a6e22e">root</span> {
+</span></span><span style="display:flex;"><span>  --primary-color: <span style="color:#ae81ff">#3498db</span>;
+</span></span><span style="display:flex;"><span>  --secondary-color: <span style="color:#ae81ff">#2ecc71</span>;
+</span></span><span style="display:flex;"><span>  --font-size-base: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">button</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>primary<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>font<span style="color:#f92672">-</span>size<span style="color:#f92672">-</span>base);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Use a consistent naming convention</li>
+<li>Organize CSS with a methodology like BEM or SMACSS</li>
+<li>Minimize specificity conflicts</li>
+<li>Use shorthand properties when possible</li>
+<li>Comment your code</li>
+</ul>
+
+        </div>
+    </article>
+
+    
+    <aside class="article-toc">
+        <div class="article-toc-content">
+            <div class="toc-header">
+                <h3>Table of Contents</h3>
+            </div>
+            <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#selectors">Selectors</a></li>
+    <li><a href="#box-model">Box Model</a></li>
+    <li><a href="#flexbox-and-grid">Flexbox and Grid</a></li>
+    <li><a href="#responsive-design">Responsive Design</a></li>
+    <li><a href="#css-variables">CSS Variables</a></li>
+    <li><a href="#best-practices">Best Practices</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </aside>
+</div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="copyright">
+                    &copy; 2025 My Custom Hugo Site
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/js/main.min.c6acf5580686b3a1dd897aeceb340d2921a126424ab86e93445bfa00b45fbe39.js"></script>
+</body>
+</html>

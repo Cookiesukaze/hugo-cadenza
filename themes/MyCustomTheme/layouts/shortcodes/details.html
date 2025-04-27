@@ -1,0 +1,13 @@
+<div class="details-wrapper">
+    <div class="details-container {{ if .Get "open" }}open{{ end }} {{ with .Get "color" }}color-{{ . }}{{ else }}color-red{{ end }}">
+        <div class="details-header">
+            <div class="details-toggle">
+                <i class="details-icon">{{ if .Get "open" }}▼{{ else }}▶{{ end }}</i>
+            </div>
+            <div class="details-title">{{ .Get "title" | default "Details" }}</div>
+        </div>
+        <div class="details-content">
+            {{ .Inner | markdownify }}
+        </div>
+    </div>
+</div>

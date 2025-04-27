@@ -1,0 +1,44 @@
+{{ $currentPage := .currentPage }}
+{{ $section := .section }}
+{{ $level := .level | default 1 }}
+{{ $parentNumber := .parentNumber | default "" }}
+
+<ul class="menu-list">
+    {{ range $index, $page := $section.Pages }}
+        {{ $isActive := eq $currentPage.RelPermalink $page.RelPermalink }}
+        {{ $isAncestor := $page.IsAncestor $currentPage }}
+        {{ $isSection := $page.IsSection }}
+        {{ $itemNumber := add $index 1 }}
+        {{ $currentNumber := cond (eq $level 1) (string $itemNumber) (printf "%s.%d" $parentNumber $itemNumber) }}
+
+        <li class="menu-item menu-level-{{ $level }} {{ if $isSection }}menu-item-section{{ else }}menu-item-page{{ end }} {{ if $isActive }}active{{ end }}"
+            {{ with $page.Params.tags }}data-tags="{{ delimit . " " }}"{{ end }}
+            data-category="{{ $page.Section }}"
+            data-title="{{ $page.Title }}">
+            {{ if $isSection }}
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle {{ if or $isActive $isAncestor }}open{{ end }}" data-target="#section-{{ md5 $page.RelPermalink }}">
+                        <i class="toggle-icon">{{ if or $isActive $isAncestor }}−{{ else }}+{{ end }}</i>
+                    </span>
+                    <a href="{{ $page.RelPermalink }}" class="{{ if $isActive }}active{{ end }}">
+                        <span class="menu-item-level-indicator">{{ $currentNumber }}</span>
+                        {{ $page.Title }}
+                    </a>
+                </div>
+                <div id="section-{{ md5 $page.RelPermalink }}" class="submenu {{ if or $isActive $isAncestor }}show{{ end }}">
+                    {{ partial "recursive-menu.html" (dict "currentPage" $currentPage "section" $page "level" (add $level 1) "parentNumber" $currentNumber) }}
+                </div>
+            {{ else }}
+                <a href="{{ $page.RelPermalink }}" class="{{ if $isActive }}active{{ end }}">
+                    <span class="menu-item-level-indicator">{{ $currentNumber }}</span>
+                    {{ $page.Title }}
+                    {{ with $page.Params.tags }}
+                    <span class="menu-item-tags" style="display:none;">
+                        {{ range . }}#{{ . }} {{ end }}
+                    </span>
+                    {{ end }}
+                </a>
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>

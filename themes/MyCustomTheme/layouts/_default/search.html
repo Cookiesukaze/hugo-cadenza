@@ -1,0 +1,91 @@
+{{ define "main" }}
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ 菜单</button>
+<div class="article-container">
+    <!-- Left sidebar (category navigation) -->
+    <aside class="article-menu">
+        <div class="article-menu-content">
+            <div class="site-title-container">
+                <h2 class="site-title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h2>
+            </div>
+            <div class="menu-search">
+                <input type="text" id="menu-search-input" placeholder="在本节中搜索...">
+            </div>
+            <!-- Menu content using partial -->
+            <div class="menu-content">
+                {{ partial "menu.html" . }}
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <article class="article-content">
+        <header class="article-header">
+            <h1 class="article-title">搜索结果</h1>
+        </header>
+        <div class="article-body">
+            <div class="search-container">
+                <form class="search-form search-page-form" role="search">
+                    <input type="search" class="search-field" placeholder="搜索..." name="q" value="{{ with .Params.query }}{{ . }}{{ end }}">
+                    <button type="submit" class="search-submit">搜索</button>
+                </form>
+
+                <div class="search-info">
+                    <p>搜索查询: <span id="search-query"></span></p>
+                </div>
+
+                <div id="search-loading" class="search-loading">
+                    <p>正在搜索...</p>
+                </div>
+
+                <div id="search-results" class="search-results">
+                    <!-- 搜索结果将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Right sidebar (TOC) -->
+    <aside class="article-toc">
+        <div class="article-toc-content">
+            <div class="toc-header">
+                <h3>搜索帮助</h3>
+            </div>
+            <div class="toc-content">
+                <div class="search-help">
+                    <h4>搜索前缀</h4>
+                    <ul>
+                        <li><code>@分类名</code> - 仅搜索分类</li>
+                        <li><code>!标题</code> - 仅搜索标题</li>
+                        <li><code>~内容</code> - 仅搜索内容</li>
+                        <li><code>#标签</code> - 仅搜索标签</li>
+                        <li>无前缀 - 搜索所有内容</li>
+                    </ul>
+
+                    <h4>单一约束示例</h4>
+                    <ul>
+                        <li><code>@前端</code> - 搜索前端分类</li>
+                        <li><code>!JavaScript</code> - 搜索标题中包含JavaScript的文章</li>
+                        <li><code>~函数</code> - 搜索内容中包含函数的文章</li>
+                        <li><code>#教程</code> - 搜索带有教程标签的文章</li>
+                    </ul>
+
+                    <h4>多重约束搜索</h4>
+                    <p>使用空格分隔多个搜索约束，同时满足多个条件：</p>
+                    <ul>
+                        <li><code>#前端 #Web开发</code> - 同时包含两个标签的文章</li>
+                        <li><code>!JavaScript ~函数</code> - 标题和内容同时匹配</li>
+                        <li><code>@前端 #教程</code> - 特定分类下的特定标签</li>
+                    </ul>
+
+                    <h4>区域搜索</h4>
+                    <p>在技术文档或作品集页面中，使用左侧搜索框可以自动限制搜索范围在当前区域内：</p>
+                    <ul>
+                        <li>在技术文档中搜索 <code>JavaScript</code> 等同于全站搜索 <code>@docs JavaScript</code></li>
+                        <li>在作品集中搜索 <code>#设计</code> 等同于全站搜索 <code>@portfolio #设计</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+{{ end }}

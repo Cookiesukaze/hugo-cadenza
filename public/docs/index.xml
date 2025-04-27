@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术文档 on My Custom Hugo Site</title>
+    <link>https://example.org/docs/</link>
+    <description>Recent content in 技术文档 on My Custom Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片展示示例</title>
+      <link>https://example.org/docs/image-examples/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/image-examples/</guid>
+      <description>图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。&#xA;单张图片折叠 以下是单张图片折叠的示例：&#xA;▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。&#xA;Go 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：&#xA;▼ 编程语言标志集 Python JavaScript C&amp;#43;&amp;#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：&#xA;{{&amp;lt; image-fold title=&amp;#34;图片标题&amp;#34; src=&amp;#34;图片URL&amp;#34; alt=&amp;#34;替代文本&amp;#34; caption=&amp;#34;图片说明&amp;#34; &amp;gt;}} 可选的图片描述文本（支持Markdown格式） {{&amp;lt; /image-fold &amp;gt;}} 如果希望默认展开，可以添加 open=true 参数。&#xA;图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：</description>
+    </item>
+    <item>
+      <title>Markdown 示例</title>
+      <link>https://example.org/docs/markdown-examples/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/markdown-examples/</guid>
+      <description>Markdown 示例 这个页面展示了各种 Markdown 格式和特殊功能的示例。&#xA;折叠式内容块 以下是折叠式内容块的示例，支持多种颜色选项：&#xA;▶ 安装为 Git 子模块 克隆仓库到您的 Git 项目中： git submodule add https://github.com/username/theme.git themes/themename 初始化和更新子模块： git submodule init git submodule update ▶ 安装为 Hugo 模块 初始化 Hugo 模块系统： hugo mod init github.com/username/yourproject 在 config.toml 中添加主题： [module] [[module.imports]] path = &amp;#34;github.com/username/theme&amp;#34; 运行 Hugo 以下载模块： hugo ▼ 手动安装 下载最新版本的主题源代码。下载链接 解压缩归档文件，将文件夹重命名为 themename 并移动到 themes/ 目录中，位于您的 Hugo 项目的根文件夹中。 继续设置主题配置文件。 更多颜色选项 折叠块支持多种颜色选项，您可以通过 color 参数指定：&#xA;▶ 紫色示例 这是一个紫色边框的折叠块。 ▶ 橙色示例 这是一个橙色边框的折叠块。 ▶ 青色示例 这是一个青色边框的折叠块。 ▶ 黄色示例 这是一个黄色边框的折叠块。 ▶ 粉色示例 这是一个粉色边框的折叠块。 ▶ 灰色示例 这是一个灰色边框的折叠块。 基本 Markdown 格式 文本格式 斜体文本 和 粗体文本</description>
+    </item>
+    <item>
+      <title>代码示例</title>
+      <link>https://example.org/docs/code-examples/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/code-examples/</guid>
+      <description>代码示例 这个页面展示了不同编程语言的代码示例，用于测试代码块的样式。&#xA;HTML 示例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;HTML Example&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;Welcome to My Website&amp;lt;/h1&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main&amp;gt; &amp;lt;section&amp;gt; &amp;lt;h2&amp;gt;About Us&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;This is a paragraph about our company.&amp;lt;/p&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;p&amp;gt;&amp;amp;copy; 2023 My Company&amp;lt;/p&amp;gt; &amp;lt;/footer&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS 示例 /* Basic reset */ * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.</description>
+    </item>
+    <item>
+      <title>API Reference</title>
+      <link>https://example.org/docs/api-reference/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/api-reference/</guid>
+      <description>API Reference Introduction This document provides a comprehensive reference for our REST API.&#xA;Authentication All API requests require authentication using an API key. Include your API key in the header of each request:&#xA;Authorization: Bearer YOUR_API_KEY Endpoints Users Get User GET /api/v1/users/{user_id} Returns information about a specific user.&#xA;Parameters:&#xA;user_id (required): The ID of the user to retrieve Response:&#xA;{ &amp;#34;id&amp;#34;: &amp;#34;123456&amp;#34;, &amp;#34;username&amp;#34;: &amp;#34;johndoe&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;john@example.com&amp;#34;, &amp;#34;created_at&amp;#34;: &amp;#34;2023-01-15T12:00:00Z&amp;#34; } Create User POST /api/v1/users Creates a new user.</description>
+    </item>
+    <item>
+      <title>Getting Started Guide</title>
+      <link>https://example.org/docs/getting-started/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/getting-started/</guid>
+      <description>Getting Started Guide Introduction This guide will help you get started with our platform quickly and efficiently.&#xA;Prerequisites Before you begin, make sure you have the following:&#xA;A modern web browser (Chrome, Firefox, Safari, or Edge) An account on our platform Basic understanding of web technologies Installation Download the software from our website Extract the files to your desired location Run the setup program Follow the on-screen instructions Configuration Basic Configuration Open the config.</description>
+    </item>
+    <item>
+      <title>数据库基础</title>
+      <link>https://example.org/docs/backend/database-basics/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/backend/database-basics/</guid>
+      <description>数据库基础 数据库是有组织地存储和管理数据的系统。在现代应用程序开发中，数据库扮演着至关重要的角色。&#xA;数据库类型 主要的数据库类型包括：&#xA;关系型数据库 关系型数据库基于关系模型，使用表格存储数据：&#xA;MySQL PostgreSQL SQLite Oracle SQL Server NoSQL数据库 NoSQL数据库不使用传统的表格模型：&#xA;文档数据库（MongoDB） 键值存储（Redis） 列存储（Cassandra） 图数据库（Neo4j） SQL基础 SQL（结构化查询语言）是用于管理关系型数据库的标准语言。&#xA;创建表 CREATE TABLE users ( id INT PRIMARY KEY, username VARCHAR(50) NOT NULL, email VARCHAR(100) UNIQUE, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); 插入数据 INSERT INTO users (id, username, email) VALUES (1, &amp;#39;johndoe&amp;#39;, &amp;#39;john@example.com&amp;#39;); 查询数据 -- 查询所有用户 SELECT * FROM users; -- 条件查询 SELECT username, email FROM users WHERE id = 1; 更新数据 UPDATE users SET email = &amp;#39;newemail@example.</description>
+    </item>
+    <item>
+      <title>HTML 基础</title>
+      <link>https://example.org/docs/frontend/html-basics/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/frontend/html-basics/</guid>
+      <description>HTML 基础 HTML（超文本标记语言）是创建网页的标准标记语言。通过HTML，你可以创建自己的网站。&#xA;HTML 文档结构 一个基本的HTML文档结构如下：&#xA;&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;页面标题&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;我的第一个段落。&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML 元素 HTML 元素由开始标签、内容和结束标签组成：&#xA;&amp;lt;tagname&amp;gt;内容&amp;lt;/tagname&amp;gt; 常见的HTML元素包括：&#xA;标题 HTML提供了六级标题，从&amp;lt;h1&amp;gt;到&amp;lt;h6&amp;gt;：&#xA;&amp;lt;h1&amp;gt;这是一级标题&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;这是二级标题&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;这是三级标题&amp;lt;/h3&amp;gt; 段落 段落使用&amp;lt;p&amp;gt;标签定义：&#xA;&amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt; 链接 链接使用&amp;lt;a&amp;gt;标签定义：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; 图片 图片使用&amp;lt;img&amp;gt;标签插入：&#xA;&amp;lt;img src=&amp;#34;image.jpg&amp;#34; alt=&amp;#34;图片描述&amp;#34; width=&amp;#34;500&amp;#34; height=&amp;#34;300&amp;#34;&amp;gt; HTML 属性 HTML属性提供了有关HTML元素的附加信息：&#xA;属性总是在开始标签中指定 属性通常以名称/值对的形式出现，如：name=&amp;ldquo;value&amp;rdquo; 例如，链接的地址在href属性中指定：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; HTML 表单 HTML表单用于收集用户输入：&#xA;&amp;lt;form action=&amp;#34;/submit-form&amp;#34; method=&amp;#34;post&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34;&amp;gt;姓名：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;邮箱：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; HTML5 新特性 HTML5引入了许多新元素和属性，如：</description>
+    </item>
+  </channel>
+</rss>

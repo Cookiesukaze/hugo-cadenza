@@ -1,0 +1,23 @@
+<div class="image-fold-wrapper">
+    <div class="image-fold-container {{ if .Get "open" }}open{{ end }}">
+        <div class="image-fold-header">
+            <button class="image-fold-toggle {{ if not (.Get "open") }}folded{{ end }}">
+                <span class="icon">▼</span>
+            </button>
+            <div class="image-fold-title">{{ .Get "title" | default "图片" }}</div>
+        </div>
+        <div class="image-fold-content">
+            <figure class="image-fold-figure">
+                <img src="{{ .Get "src" }}" alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "title" }}{{ end }}" class="image-fold-img" />
+                {{ with .Get "caption" }}
+                <figcaption class="image-fold-caption">{{ . }}</figcaption>
+                {{ end }}
+            </figure>
+            {{ with .Inner }}
+            <div class="image-fold-description">
+                {{ . | markdownify }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

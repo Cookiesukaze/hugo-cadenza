@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gallery on My Custom Hugo Site</title>
+    <link>https://example.org/tags/gallery/</link>
+    <description>Recent content in Gallery on My Custom Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片展示示例</title>
+      <link>https://example.org/docs/image-examples/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/image-examples/</guid>
+      <description>图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。&#xA;单张图片折叠 以下是单张图片折叠的示例：&#xA;▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。&#xA;Go 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：&#xA;▼ 编程语言标志集 Python JavaScript C&amp;#43;&amp;#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：&#xA;{{&amp;lt; image-fold title=&amp;#34;图片标题&amp;#34; src=&amp;#34;图片URL&amp;#34; alt=&amp;#34;替代文本&amp;#34; caption=&amp;#34;图片说明&amp;#34; &amp;gt;}} 可选的图片描述文本（支持Markdown格式） {{&amp;lt; /image-fold &amp;gt;}} 如果希望默认展开，可以添加 open=true 参数。&#xA;图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：</description>
+    </item>
+  </channel>
+</rss>

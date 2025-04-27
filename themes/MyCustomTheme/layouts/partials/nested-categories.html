@@ -1,0 +1,24 @@
+{{ $currentPage := .currentPage }}
+{{ $categories := .categories }}
+{{ $level := .level | default 1 }}
+{{ $parentClass := .parentClass | default "" }}
+
+<ul class="menu-list {{ $parentClass }}">
+    {{ range $name, $subcategories := $categories }}
+        {{ $categoryURL := printf "/categories/%s" ($name | urlize) }}
+        {{ $isActive := eq $currentPage.RelPermalink $categoryURL }}
+        
+        <li class="menu-item menu-item-category menu-item-level-{{ $level }}{{ if $isActive }} active{{ end }}">
+            <a href="{{ $categoryURL | relURL }}">{{ $name | humanize }}</a>
+            
+            {{ if ne (len $subcategories) 0 }}
+                {{ partial "nested-categories.html" (dict 
+                    "currentPage" $currentPage 
+                    "categories" $subcategories 
+                    "level" (add $level 1)
+                    "parentClass" "submenu"
+                ) }}
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>

@@ -1,0 +1,140 @@
+{{ $paginator := .paginator }}
+{{ $paginationRange := 3 }}
+
+<div class="pagination-container">
+    <div class="pagination">
+        <!-- 首页按钮 -->
+        {{ if ne $paginator.PageNumber 1 }}
+        <a href="{{ $paginator.First.URL }}" class="pagination-item pagination-first" title="首页">
+            <span class="pagination-icon">«</span>
+        </a>
+        {{ else }}
+        <span class="pagination-item pagination-first disabled" title="首页">
+            <span class="pagination-icon">«</span>
+        </span>
+        {{ end }}
+
+        <!-- 上一页按钮 -->
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="pagination-item pagination-prev" title="上一页">
+            <span class="pagination-icon">‹</span>
+        </a>
+        {{ else }}
+        <span class="pagination-item pagination-prev disabled" title="上一页">
+            <span class="pagination-icon">‹</span>
+        </span>
+        {{ end }}
+
+        <!-- 页码按钮 -->
+        {{ $currentPageNumber := $paginator.PageNumber }}
+        {{ $totalPages := $paginator.TotalPages }}
+
+        {{ $startPage := 1 }}
+        {{ if gt (sub $currentPageNumber $paginationRange) 1 }}
+            {{ $startPage = sub $currentPageNumber $paginationRange }}
+        {{ end }}
+
+        {{ $endPage := $totalPages }}
+        {{ if lt (add $currentPageNumber $paginationRange) $totalPages }}
+            {{ $endPage = add $currentPageNumber $paginationRange }}
+        {{ end }}
+
+        <!-- 如果起始页不是1，显示省略号 -->
+        {{ if gt $startPage 1 }}
+            <a href="{{ $paginator.First.URL }}" class="pagination-item">1</a>
+            {{ if gt $startPage 2 }}
+            <span class="pagination-item pagination-ellipsis">...</span>
+            {{ end }}
+        {{ end }}
+
+        <!-- 显示页码 -->
+        {{ range $paginator.Pagers }}
+            {{ if and (ge .PageNumber $startPage) (le .PageNumber $endPage) }}
+            <a href="{{ .URL }}" class="pagination-item{{ if eq . $paginator }} active{{ end }}">{{ .PageNumber }}</a>
+            {{ end }}
+        {{ end }}
+
+        <!-- 如果结束页不是最后一页，显示省略号 -->
+        {{ if lt $endPage $totalPages }}
+            {{ if lt (add $endPage 1) $totalPages }}
+            <span class="pagination-item pagination-ellipsis">...</span>
+            {{ end }}
+            <a href="{{ $paginator.Last.URL }}" class="pagination-item">{{ $totalPages }}</a>
+        {{ end }}
+
+        <!-- 下一页按钮 -->
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="pagination-item pagination-next" title="下一页">
+            <span class="pagination-icon">›</span>
+        </a>
+        {{ else }}
+        <span class="pagination-item pagination-next disabled" title="下一页">
+            <span class="pagination-icon">›</span>
+        </span>
+        {{ end }}
+
+        <!-- 末页按钮 -->
+        {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+        <a href="{{ $paginator.Last.URL }}" class="pagination-item pagination-last" title="末页">
+            <span class="pagination-icon">»</span>
+        </a>
+        {{ else }}
+        <span class="pagination-item pagination-last disabled" title="末页">
+            <span class="pagination-icon">»</span>
+        </span>
+        {{ end }}
+    </div>
+
+    <!-- 页码跳转 -->
+    <div class="pagination-jump">
+        <form class="pagination-jump-form" action="javascript:void(0);" onsubmit="jumpToPage(this, '{{ $paginator.First.URL }}')">
+            <span class="pagination-jump-text">跳转到</span>
+            <input type="number" class="pagination-jump-input" min="1" max="{{ $paginator.TotalPages }}" value="{{ $paginator.PageNumber }}" aria-label="页码">
+            <span class="pagination-jump-text">页</span>
+            <button type="submit" class="pagination-jump-button">确定</button>
+        </form>
+    </div>
+
+    <!-- 每页显示数量选择器 -->
+    <div class="pagination-size-selector">
+        <span class="pagination-size-text">每页显示:</span>
+        <select class="pagination-size-select" onchange="changePageSize(this.value, '{{ $paginator.First.URL }}')">
+            {{ range slice 5 10 20 50 100 }}
+                <option value="{{ . }}" {{ if eq $paginator.PageSize . }}selected{{ end }}>{{ . }}</option>
+            {{ end }}
+        </select>
+    </div>
+</div>
+
+<script>
+function jumpToPage(form, baseUrl) {
+    const input = form.querySelector('.pagination-jump-input');
+    const pageNumber = parseInt(input.value, 10);
+    const maxPage = parseInt(input.max, 10);
+
+    if (pageNumber && pageNumber > 0 && pageNumber <= maxPage) {
+        // 构建URL
+        let url = baseUrl;
+        // 移除URL中的page部分
+        url = url.replace(/\/page\/\d+\/?/, '/');
+        // 添加新的页码
+        if (pageNumber > 1) {
+            url = url.replace(/\/?$/, `/page/${pageNumber}/`);
+        }
+
+        // 保留每页显示数量参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const perPage = urlParams.get('per_page');
+        if (perPage) {
+            // 如果URL已经有查询参数
+            if (url.includes('?')) {
+                url += `&per_page=${perPage}`;
+            } else {
+                url += `?per_page=${perPage}`;
+            }
+        }
+
+        window.location.href = url;
+    }
+}
+</script>

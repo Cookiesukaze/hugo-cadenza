@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>展示 on My Custom Hugo Site</title>
+    <link>https://example.org/tags/%E5%B1%95%E7%A4%BA/</link>
+    <description>Recent content in 展示 on My Custom Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/%E5%B1%95%E7%A4%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>作品集</title>
+      <link>https://example.org/portfolio/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/portfolio/</guid>
+      <description>Portfolio Welcome to my portfolio section. Here you&amp;rsquo;ll find a showcase of my projects and creative works. I&amp;rsquo;ve been working on a variety of projects across different domains, from web design to mobile app development.&#xA;What You&amp;rsquo;ll Find Here This portfolio is organized to help you easily navigate through my work:&#xA;Web Design Projects: Websites and web applications I&amp;rsquo;ve designed and developed Mobile Applications: iOS and Android apps I&amp;rsquo;ve created UI/UX Design Work: User interface and experience design projects Graphic Design: Logos, branding, and other graphic design work My Approach I believe in creating work that is not only visually appealing but also functional and user-friendly.</description>
+    </item>
+  </channel>
+</rss>

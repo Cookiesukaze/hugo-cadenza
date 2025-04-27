@@ -1,0 +1,14 @@
+{{ $currentPage := . }}
+{{ $rootSection := .FirstSection }}
+
+<!-- Root section (Level 1) -->
+<div class="menu-root">
+    <h3 class="menu-root-title">
+        <a href="{{ $rootSection.RelPermalink }}" class="{{ if eq $currentPage.RelPermalink $rootSection.RelPermalink }}active{{ end }}">
+            {{ $rootSection.Title }}
+        </a>
+    </h3>
+</div>
+
+<!-- Recursive menu for nested sections -->
+{{ partial "recursive-menu.html" (dict "currentPage" $currentPage "section" $rootSection "level" 1 "parentNumber" "") }}

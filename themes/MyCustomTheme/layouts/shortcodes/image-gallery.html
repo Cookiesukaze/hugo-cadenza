@@ -1,0 +1,15 @@
+<div class="image-gallery-wrapper">
+    <div class="image-gallery-container {{ if .Get "open" }}open{{ end }}">
+        <div class="image-gallery-header">
+            <button class="image-gallery-toggle {{ if not (.Get "open") }}folded{{ end }}">
+                <span class="icon">▼</span>
+            </button>
+            <div class="image-gallery-title">{{ .Get "title" | default "图片集" }}</div>
+        </div>
+        <div class="image-gallery-content">
+            <div class="image-gallery-grid">
+                {{ .Inner }}
+            </div>
+        </div>
+    </div>
+</div>

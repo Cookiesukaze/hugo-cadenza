@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程语言 on My Custom Hugo Site</title>
+    <link>http://localhost:43687/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in 编程语言 on My Custom Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:43687/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript基础</title>
+      <link>http://localhost:43687/docs/frontend/javascript/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:43687/docs/frontend/javascript/</guid>
+      <description>JavaScript基础 JavaScript是一种轻量级的解释型或即时编译型的编程语言，是网页编程的核心语言之一。&#xA;变量和数据类型 JavaScript中有几种基本的数据类型：&#xA;// 数字 let num = 42; // 字符串 let str = &amp;#34;Hello, world!&amp;#34;; // 布尔值 let bool = true; // 空值 let n = null; // 未定义 let u = undefined; // 对象 let obj = { name: &amp;#34;John&amp;#34;, age: 30 }; // 数组 let arr = [1, 2, 3, 4, 5]; 函数 函数是JavaScript中的一等公民：&#xA;// 函数声明 function greet(name) { return `Hello, ${name}!`; } // 函数表达式 const sayGoodbye = function(name) { return `Goodbye, ${name}!</description>
+    </item>
+  </channel>
+</rss>

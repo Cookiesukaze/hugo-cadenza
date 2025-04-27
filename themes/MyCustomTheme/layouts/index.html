@@ -1,0 +1,151 @@
+{{ define "main" }}
+<div class="home-container">
+    <div class="home-content">
+        <!-- Home info section (similar to PaperMod) -->
+        <div class="home-info">
+            <h1 class="home-title">{{ site.Title }}</h1>
+            {{ with site.Params.homeInfo }}
+            <div class="home-description">
+                {{ .description | markdownify }}
+            </div>
+            {{ end }}
+
+            <!-- Social icons -->
+            {{ if site.Params.socialIcons }}
+            <div class="social-icons">
+                {{- range site.Params.socialIcons }}
+                <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer" title="{{ .name }}">
+                    <span class="icon-{{ .name | lower }}"></span>
+                </a>
+                {{- end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <!-- Main content from _index.md -->
+        <div class="home-content-main">
+            {{ .Content }}
+
+            <!-- Social Icons -->
+            {{ if .Params.socialIcons }}
+            <div class="social-icons">
+                {{ range .Params.socialIcons }}
+                <a href="{{ .url }}" class="social-icon" target="_blank" rel="noopener noreferrer" title="{{ .name | humanize }}">
+                    {{ if eq .name "github" }}
+                    <i class="fab fa-github"></i>
+                    {{ else if eq .name "email" }}
+                    <i class="fas fa-envelope"></i>
+                    {{ else if eq .name "linkedin" }}
+                    <i class="fab fa-linkedin-in"></i>
+                    {{ else if eq .name "twitter" }}
+                    <i class="fab fa-twitter"></i>
+                    {{ else }}
+                    <i class="fas fa-link"></i>
+                    {{ end }}
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <!-- Main categories as cards -->
+        <div class="category-cards">
+            <!-- Portfolio Card -->
+            <div class="category-card">
+                <div class="category-card-inner">
+                    <div class="category-card-header">
+                        <h2 class="category-card-title">作品集</h2>
+                    </div>
+                    <div class="category-card-content">
+                        <!-- Featured portfolio items -->
+                        <div class="featured-items">
+                            {{ $portfolioPosts := where (where site.RegularPages "Type" "portfolio") "Params.featured" true }}
+                            {{ range first 3 $portfolioPosts }}
+                            <div class="featured-item">
+                                <h3 class="featured-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                                <div class="featured-summary">{{ .Summary | plainify | truncate 80 }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if eq (len $portfolioPosts) 0 }}
+                            <div class="featured-empty">暂无精选作品</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="category-card-footer">
+                        <a href="/portfolio/" class="category-card-link">浏览所有作品 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Documentation Card -->
+            <div class="category-card">
+                <div class="category-card-inner">
+                    <div class="category-card-header">
+                        <h2 class="category-card-title">技术文档</h2>
+                    </div>
+                    <div class="category-card-content">
+                        <!-- Featured documentation items -->
+                        <div class="featured-items">
+                            {{ $techDocs := where (where site.RegularPages "Type" "docs") "Params.featured" true }}
+                            {{ range first 3 $techDocs }}
+                            <div class="featured-item">
+                                <h3 class="featured-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                                <div class="featured-summary">{{ .Summary | plainify | truncate 80 }}</div>
+                            </div>
+                            {{ end }}
+                            {{ if eq (len $techDocs) 0 }}
+                            <div class="featured-empty">暂无精选文档</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="category-card-footer">
+                        <a href="/docs/" class="category-card-link">浏览所有文档 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right sidebar (similar to Mainroad) -->
+    <aside class="sidebar">
+        <!-- Search widget -->
+        <div class="widget widget-search">
+            <h4 class="widget-title">搜索</h4>
+            <form class="search-form" role="search" action="/search/">
+                <input type="search" class="search-field" placeholder="搜索..." name="q">
+                <button type="submit" class="search-submit">搜索</button>
+            </form>
+        </div>
+
+
+
+        <!-- Recent posts widget -->
+        <div class="widget widget-recent">
+            <h4 class="widget-title">最近文章</h4>
+            <div class="widget-content">
+                <ul class="widget-list">
+                    {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                    <li class="widget-item">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tags widget -->
+        <div class="widget widget-tags">
+            <h4 class="widget-title">标签</h4>
+            <div class="widget-content">
+                <div class="tag-cloud">
+                    {{ range site.Taxonomies.tags }}
+                    <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item">
+                        {{ .Page.Title }} ({{ .Count }})
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+{{ end }}

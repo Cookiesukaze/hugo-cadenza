@@ -1,0 +1,19 @@
+{{ $content := .Plain }}
+{{ $contentLength := len $content }}
+{{ $wordCount := .WordCount }}
+
+{{ $chineseChars := len (findRE "[\u4e00-\u9fa5]" $content) }}
+
+{{ if gt $chineseChars 0 }}
+    {{ $readingTime := div $contentLength 500 }}
+    {{ if eq $readingTime 0 }}
+        {{ $readingTime = 1 }}
+    {{ end }}
+    阅读时间：{{ $readingTime }} 分钟
+{{ else }}
+    {{ $readingTime := div $wordCount 200 }}
+    {{ if eq $readingTime 0 }}
+        {{ $readingTime = 1 }}
+    {{ end }}
+    阅读时间：{{ $readingTime }} 分钟
+{{ end }}

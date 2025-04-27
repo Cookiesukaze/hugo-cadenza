@@ -1,0 +1,168 @@
+{{ define "main" }}
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ 菜单</button>
+<div class="article-container">
+    <!-- Left sidebar (category navigation) -->
+    <aside class="article-menu">
+        <div class="article-menu-content">
+            <div class="site-title-container">
+                <h2 class="site-title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h2>
+            </div>
+            <div class="menu-search">
+                <div class="section-search">
+                    <input type="text" id="menu-search-input" placeholder="在当前区域中搜索...">
+                </div>
+            </div>
+            <!-- Menu content using partial -->
+            <div class="menu-content">
+                {{ partial "menu.html" . }}
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <article class="article-content">
+        <header class="article-header">
+            <h1 class="article-title" id="{{ .Title | urlize }}">{{ .Title }}</h1>
+            {{ with .Description }}
+            <div class="article-description">
+                {{ . | markdownify }}
+            </div>
+            {{ end }}
+        </header>
+        <div class="article-body">
+            <!-- 手动处理内容，为标题添加ID -->
+            {{ $content := .Content }}
+
+            <!-- 提取所有h2-h6标题 -->
+            {{ $processedContent := $content }}
+            {{ $headers := findRE "<h[2-6][^>]*>([^<]+)</h[2-6]>" $content }}
+
+            {{ range $headers }}
+                {{ $header := . }}
+                {{ $title := replaceRE "<h[2-6][^>]*>([^<]+)</h[2-6]>" "$1" $header }}
+                {{ $level := replaceRE "<h([2-6])[^>]*>([^<]+)</h[2-6]>" "$1" $header }}
+                {{ $id := $title | urlize }}
+
+                <!-- 创建带ID的新标题 -->
+                {{ $newHeader := printf "<h%s id=\"%s\">%s</h%s>" $level $id $title $level }}
+
+                <!-- 替换原标题 -->
+                {{ $processedContent = replace $processedContent $header $newHeader }}
+            {{ end }}
+
+            {{ $processedContent | safeHTML }}
+
+            <!-- List of child pages in a more compact format -->
+            {{ $allPages := union .Pages .Sections }}
+            {{ if gt (len $allPages) 0 }}
+            <div class="child-pages">
+                <h2>所有文章</h2>
+                <ul class="page-list">
+                    {{ $perPage := 5 }}
+                    {{ with $.Params.per_page }}
+                        {{ $perPage = . }}
+                    {{ else }}
+                        {{ with $.Site.Params.per_page }}
+                            {{ $perPage = . }}
+                        {{ end }}
+                    {{ end }}
+
+                    {{ with .Paginator.PageSize }}
+                        {{ $perPage = . }}
+                    {{ end }}
+
+                    {{ $paginator := .Paginate $allPages $perPage }}
+                    {{ range $paginator.Pages }}
+                    <li class="page-item">
+                        <a href="{{ .RelPermalink }}" class="page-link">
+                            <span class="page-title">{{ .Title }}</span>
+                            <span class="page-date">{{ if not .Date.IsZero }}{{ .Date.Format "2006年01月02日" }}{{ else }}{{ now.Format "2006年01月02日" }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                <!-- Pagination -->
+                {{ if gt $paginator.TotalPages 1 }}
+                    {{ partial "pagination.html" (dict "paginator" $paginator) }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </article>
+
+    <!-- Right sidebar (table of contents) -->
+    <aside class="article-toc">
+        <div class="article-toc-content">
+            <div class="toc-header">
+                <h3>目录</h3>
+            </div>
+            <div class="toc-content">
+                <!-- 尝试使用Hugo的TableOfContents -->
+                {{ $hasTableOfContents := ne (print .TableOfContents) "" }}
+                {{ if $hasTableOfContents }}
+                    {{ .TableOfContents }}
+                {{ else }}
+                    <!-- 如果Hugo的TableOfContents为空，则手动创建带层级的目录 -->
+                    <nav id="TableOfContents">
+                        <ul>
+                            <!-- 首先添加页面标题作为第一个目录项 -->
+                            <li>
+                                <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+
+                                <!-- 处理内容中的标题并保持层级结构 -->
+                                {{ $content := .Content }}
+
+                                <!-- 提取所有h2-h6标题 -->
+                                {{ $allHeaders := findRE "<h([2-6])[^>]*>([^<]+)</h[2-6]>" $content }}
+
+                                <!-- 如果有h2标题，创建嵌套结构 -->
+                                {{ if $allHeaders }}
+                                    <ul>
+                                        {{ $currentLevel := 2 }}
+                                        {{ $currentUlCount := 1 }}
+
+                                        {{ range $allHeaders }}
+                                            {{ $header := . }}
+                                            {{ $level := int (replaceRE "<h([2-6])[^>]*>([^<]+)</h[2-6]>" "$1" $header) }}
+                                            {{ $title := replaceRE "<h[2-6][^>]*>([^<]+)</h[2-6]>" "$1" $header }}
+                                            {{ $id := $title | urlize }}
+
+                                            <!-- 处理层级变化 -->
+                                            {{ if gt $level $currentLevel }}
+                                                <!-- 层级增加，添加新的ul -->
+                                                {{ range $i, $e := (seq (sub $level $currentLevel)) }}
+                                                    <ul>
+                                                    {{ $currentUlCount = add $currentUlCount 1 }}
+                                                {{ end }}
+                                                {{ $currentLevel = $level }}
+                                            {{ else if lt $level $currentLevel }}
+                                                <!-- 层级减少，关闭多余的ul -->
+                                                {{ range $i, $e := (seq (sub $currentLevel $level)) }}
+                                                    </ul>
+                                                    {{ $currentUlCount = sub $currentUlCount 1 }}
+                                                {{ end }}
+                                                {{ $currentLevel = $level }}
+                                            {{ end }}
+
+                                            <!-- 添加当前标题，确保ID与内容中的ID匹配 -->
+                                            <li>
+                                                <a href="#{{ $title | urlize }}">{{ $title }}</a>
+                                            </li>
+                                        {{ end }}
+
+                                        <!-- 关闭所有打开的ul标签 -->
+                                        {{ range $i, $e := (seq (sub $currentUlCount 1)) }}
+                                            </ul>
+                                        {{ end }}
+                                    </ul>
+                                {{ end }}
+                            </li>
+                        </ul>
+                    </nav>
+                {{ end }}
+            </div>
+        </div>
+    </aside>
+</div>
+{{ end }}

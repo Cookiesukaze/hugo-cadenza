@@ -1,0 +1,1 @@
+function toggleImage(e){const t=e.closest(".enhanced-image-wrapper"),n=t.querySelector(".enhanced-image-container"),s=t.querySelector(".image-toggle-icon");t.classList.toggle("collapsed"),t.classList.contains("collapsed")?(n.style.display="none",s.textContent="▶"):(n.style.display="block",s.textContent="▼")}

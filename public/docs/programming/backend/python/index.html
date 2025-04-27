@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=43687&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming - My Custom Hugo Site</title>
+    
+    <link rel="stylesheet" href="/css/main.min.6b54dc569aef6ab659ea23231e76abbd94066614f37bab36201e91c1f18ee10a.css">
+</head>
+<body class="single">
+    <div class="container">
+        
+
+        <main class="main">
+            
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ Menu</button>
+<div class="article-container">
+    
+    <aside class="article-menu">
+        <div class="article-menu-content">
+            <div class="site-title-container">
+                <h2 class="site-title"><a href="/">My Custom Hugo Site</a></h2>
+            </div>
+            <div class="menu-search">
+                <input type="text" id="menu-search-input" placeholder="Search in this section...">
+            </div>
+            <div class="menu-content">
+                
+                
+
+                
+                <ul class="menu-list">
+                    
+                    <li class="menu-item menu-item-level-1">
+                        <a href="/docs/">Technical Documentation</a>
+                    </li>
+
+                    
+                    
+                    <li class="menu-item menu-item-level-1-child active">
+                        <a href="/docs/programming/backend/python/">Python Programming</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-level-1-child">
+                        <a href="/docs/api-reference/">API Reference</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-level-1-child">
+                        <a href="/docs/getting-started/">Getting Started Guide</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-level-1-child">
+                        <a href="/docs/frontend/">前端开发</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-level-1-child">
+                        <a href="/docs/backend/">后端开发</a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    <li class="menu-item menu-item-level-2">
+                        <a href="/docs/frontend/">前端开发</a>
+                    </li>
+
+                    
+                    
+                    <li class="menu-item menu-item-level-2-child">
+                        <a href="/docs/frontend/javascript/">JavaScript基础</a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="menu-item menu-item-level-2">
+                        <a href="/docs/backend/">后端开发</a>
+                    </li>
+
+                    
+                    
+                    <li class="menu-item menu-item-level-2-child">
+                        <a href="/docs/backend/database/">数据库基础</a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    
+    <article class="article-content">
+        <header class="article-header">
+            <h1 class="article-title">Python Programming</h1>
+            <div class="article-meta">
+                <span class="article-date">
+                    <span class="article-date-icon"></span>
+                    Created: March 20, 2023
+                    
+                </span>
+                
+                <span class="article-tags">
+                    <span class="article-tags-icon"></span>
+                    
+                    <a href="/tags/python">python</a>
+                    
+                    <a href="/tags/backend">backend</a>
+                    
+                    <a href="/tags/programming">programming</a>
+                    
+                </span>
+                
+                <span class="article-wordcount">
+                    <span class="article-wordcount-icon"></span>
+                    323 words
+                </span>
+            </div>
+        </header>
+        <div class="article-body">
+            <h1 id="python-programming">Python Programming</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Python is a high-level, interpreted programming language known for its readability and versatility. It&rsquo;s widely used in web development, data science, artificial intelligence, and more.</p>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>Python&rsquo;s syntax is clean and readable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Variables and data types</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alice&#34;</span>  <span style="color:#75715e"># string</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>        <span style="color:#75715e"># integer</span>
+</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.7</span>    <span style="color:#75715e"># float</span>
+</span></span><span style="display:flex;"><span>is_student <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>  <span style="color:#75715e"># boolean</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print to console</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">! You are </span><span style="color:#e6db74">{</span>age<span style="color:#e6db74">}</span><span style="color:#e6db74"> years old.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conditional statements</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;You are an adult.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;You are a minor.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loops</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(i)  <span style="color:#75715e"># Prints 0, 1, 2, 3, 4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name, greeting<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Hello&#34;</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>greeting<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>message <span style="color:#f92672">=</span> greet(<span style="color:#e6db74">&#34;Bob&#34;</span>)
+</span></span><span style="display:flex;"><span>print(message)  <span style="color:#75715e"># Prints: Hello, Bob!</span>
+</span></span></code></pre></div><h2 id="data-structures">Data Structures</h2>
+<p>Python has several built-in data structures:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Lists (ordered, mutable)</span>
+</span></span><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>]
+</span></span><span style="display:flex;"><span>fruits<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;orange&#34;</span>)
+</span></span><span style="display:flex;"><span>print(fruits[<span style="color:#ae81ff">0</span>])  <span style="color:#75715e"># Prints: apple</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tuples (ordered, immutable)</span>
+</span></span><span style="display:flex;"><span>coordinates <span style="color:#f92672">=</span> (<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dictionaries (key-value pairs)</span>
+</span></span><span style="display:flex;"><span>person <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;John&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;age&#34;</span>: <span style="color:#ae81ff">25</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;New York&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(person[<span style="color:#e6db74">&#34;name&#34;</span>])  <span style="color:#75715e"># Prints: John</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets (unordered, unique elements)</span>
+</span></span><span style="display:flex;"><span>unique_numbers <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
+</span></span><span style="display:flex;"><span>print(unique_numbers)  <span style="color:#75715e"># Prints: {1, 2, 3, 4, 5}</span>
+</span></span></code></pre></div><h2 id="object-oriented-programming">Object-Oriented Programming</h2>
+<p>Python supports object-oriented programming:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, name, age):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, my name is </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74"> and I am </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>age<span style="color:#e6db74">}</span><span style="color:#e6db74"> years old.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create an instance</span>
+</span></span><span style="display:flex;"><span>john <span style="color:#f92672">=</span> Person(<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>print(john<span style="color:#f92672">.</span>greet())
+</span></span></code></pre></div><h2 id="libraries-and-frameworks">Libraries and Frameworks</h2>
+<p>Python has a rich ecosystem of libraries:</p>
+<ul>
+<li><strong>Web Development</strong>: Django, Flask</li>
+<li><strong>Data Science</strong>: NumPy, Pandas, Matplotlib</li>
+<li><strong>Machine Learning</strong>: TensorFlow, PyTorch, scikit-learn</li>
+<li><strong>Automation</strong>: Selenium, Beautiful Soup</li>
+</ul>
+<h2 id="virtual-environments">Virtual Environments</h2>
+<p>It&rsquo;s best practice to use virtual environments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Create a virtual environment</span>
+</span></span><span style="display:flex;"><span>python -m venv myenv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate it (Windows)</span>
+</span></span><span style="display:flex;"><span>myenv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate it (macOS/Linux)</span>
+</span></span><span style="display:flex;"><span>source myenv/bin/activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install packages</span>
+</span></span><span style="display:flex;"><span>pip install package_name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save requirements</span>
+</span></span><span style="display:flex;"><span>pip freeze &gt; requirements.txt
+</span></span></code></pre></div><h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Follow PEP 8 style guide</li>
+<li>Write docstrings for functions and classes</li>
+<li>Use meaningful variable names</li>
+<li>Write unit tests</li>
+<li>Handle exceptions properly</li>
+</ul>
+
+        </div>
+    </article>
+
+    
+    <aside class="article-toc">
+        <div class="article-toc-content">
+            <div class="toc-header">
+                <h3>Table of Contents</h3>
+            </div>
+            <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#basic-syntax">Basic Syntax</a></li>
+    <li><a href="#data-structures">Data Structures</a></li>
+    <li><a href="#object-oriented-programming">Object-Oriented Programming</a></li>
+    <li><a href="#libraries-and-frameworks">Libraries and Frameworks</a></li>
+    <li><a href="#virtual-environments">Virtual Environments</a></li>
+    <li><a href="#best-practices">Best Practices</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </aside>
+</div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="copyright">
+                    &copy; 2025 My Custom Hugo Site
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/js/main.min.71d1fe5c2a7a56aab332d41b0fc8f8bed4d6fbda56af02b27d4a90f6c2357529.js"></script>
+</body>
+</html>

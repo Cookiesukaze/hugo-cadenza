@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll(".menu-toggle");e.forEach(e=>{e.addEventListener("click",function(e){e.preventDefault(),e.stopPropagation(),this.classList.toggle("open");const t=this.getAttribute("data-target");if(t){const e=document.querySelector(t);e&&e.classList.toggle("show")}})})})

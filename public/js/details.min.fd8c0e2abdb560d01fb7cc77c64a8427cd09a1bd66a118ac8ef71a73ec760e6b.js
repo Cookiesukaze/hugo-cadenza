@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll(".details-header");e.forEach(e=>{e.addEventListener("click",function(){const e=this.closest(".details-container");e.classList.toggle("open");const t=this.querySelector(".details-icon");e.classList.contains("open")?t.textContent="▼":t.textContent="▶"})})})

@@ -1,0 +1,113 @@
+{{ define "main" }}
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ 菜单</button>
+<div class="article-container">
+    <!-- Left sidebar (category navigation) -->
+    <aside class="article-menu">
+        <div class="article-menu-content">
+            <div class="site-title-container">
+                <h2 class="site-title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h2>
+            </div>
+            <div class="menu-search">
+                <input type="text" id="menu-search-input" placeholder="在本节中搜索...">
+            </div>
+            <!-- Menu content using partial -->
+            <div class="menu-content">
+                {{ partial "menu.html" . }}
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <article class="article-content">
+        <header class="article-header">
+            <h1 class="article-title" id="{{ .Title | urlize }}">标签: {{ .Title }}</h1>
+            {{ with .Description }}
+            <div class="article-description">
+                {{ . | markdownify }}
+            </div>
+            {{ end }}
+        </header>
+        <div class="article-body">
+            <!-- Section content with auto-ID for headings -->
+            {{ $content := .Content }}
+            {{ $processedContent := $content }}
+            {{ $headers := findRE "<h[2-6][^>]*>([^<]+)</h[2-6]>" $content }}
+
+            {{ range $headers }}
+                {{ $header := . }}
+                {{ $title := replaceRE "<h[2-6][^>]*>([^<]+)</h[2-6]>" "$1" $header }}
+                {{ $level := replaceRE "<h([2-6])[^>]*>([^<]+)</h[2-6]>" "$1" $header }}
+                {{ $id := $title | urlize }}
+
+                <!-- 创建带ID的新标题 -->
+                {{ $newHeader := printf "<h%s id=\"%s\">%s</h%s>" $level $id $title $level }}
+
+                <!-- 替换原标题 -->
+                {{ $processedContent = replace $processedContent $header $newHeader }}
+            {{ end }}
+
+            {{ $processedContent | safeHTML }}
+
+            <!-- List of pages with this tag -->
+            <div class="child-pages">
+                <h2>所有文章</h2>
+                <ul class="page-list">
+                    {{ $perPage := 5 }}
+                    {{ with $.Params.per_page }}
+                        {{ $perPage = . }}
+                    {{ else }}
+                        {{ with $.Site.Params.per_page }}
+                            {{ $perPage = . }}
+                        {{ end }}
+                    {{ end }}
+
+                    {{ with .Paginator.PageSize }}
+                        {{ $perPage = . }}
+                    {{ end }}
+
+                    {{ $paginator := .Paginate .Pages $perPage }}
+                    {{ range $paginator.Pages }}
+                    <li class="page-item">
+                        <a href="{{ .RelPermalink }}" class="page-link">
+                            <span class="page-title">{{ .Title }}</span>
+                            <span class="page-date">{{ if not .Date.IsZero }}{{ .Date.Format "2006年01月02日" }}{{ else }}{{ now.Format "2006年01月02日" }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                <!-- Pagination -->
+                {{ if gt $paginator.TotalPages 1 }}
+                    {{ partial "pagination.html" (dict "paginator" $paginator) }}
+                {{ end }}
+            </div>
+        </div>
+    </article>
+
+    <!-- Right sidebar (table of contents) -->
+    <aside class="article-toc">
+        <div class="article-toc-content">
+            <div class="toc-header">
+                <h3>目录</h3>
+            </div>
+            <div class="toc-content">
+                <!-- 尝试使用Hugo的TableOfContents -->
+                {{ $hasTableOfContents := ne (print .TableOfContents) "" }}
+                {{ if $hasTableOfContents }}
+                    {{ .TableOfContents }}
+                {{ else }}
+                    <!-- 如果Hugo的TableOfContents为空，则手动创建带层级的目录 -->
+                    <nav id="TableOfContents">
+                        <ul>
+                            <!-- 首先添加页面标题作为第一个目录项 -->
+                            <li>
+                                <a href="#{{ .Title | urlize }}">标签: {{ .Title }}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                {{ end }}
+            </div>
+        </div>
+    </aside>
+</div>
+{{ end }}

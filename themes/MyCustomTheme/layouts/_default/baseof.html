@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+    <!-- Google Fonts for code blocks -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;500&family=Source+Code+Pro:wght@400;600&display=swap">
+    {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {{ $socialIcons := resources.Get "css/social-icons.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $socialIcons.RelPermalink }}">
+    <!-- Code blocks styling -->
+    {{ $codeBlocks := resources.Get "css/code-blocks.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $codeBlocks.RelPermalink }}">
+</head>
+<body class="{{ if .IsHome }}home{{ else }}{{ if eq .Kind "page" }}single{{ else }}list{{ end }}{{ end }}">
+    <div class="container">
+        <!-- Header removed for all pages -->
+
+        <main class="main">
+            {{ block "main" . }}{{ end }}
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="copyright">
+                    &copy; {{ now.Format "2006" }} {{ site.Title }}
+                </div>
+            </div>
+        </footer>
+    </div>
+    {{ $mainScript := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $mainScript.RelPermalink }}"></script>
+
+    {{ $menuScript := resources.Get "js/menu.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $menuScript.RelPermalink }}"></script>
+
+    {{ $codeBlocksScript := resources.Get "js/code-blocks.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $codeBlocksScript.RelPermalink }}"></script>
+
+    {{ $detailsScript := resources.Get "js/details.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $detailsScript.RelPermalink }}"></script>
+
+    {{ $imageFoldScript := resources.Get "js/image-fold.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $imageFoldScript.RelPermalink }}"></script>
+
+    {{ $searchScript := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $searchScript.RelPermalink }}"></script>
+
+    {{ $sectionSearchScript := resources.Get "js/section-search.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $sectionSearchScript.RelPermalink }}"></script>
+</body>
+</html>

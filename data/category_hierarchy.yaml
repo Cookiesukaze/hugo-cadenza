@@ -1,0 +1,14 @@
+categories:
+  programming:
+    frontend:
+      html: {}
+      css: {}
+      javascript: {}
+    backend:
+      database: {}
+      api: {}
+      server: {}
+  design:
+    ui: {}
+    ux: {}
+    graphic: {}

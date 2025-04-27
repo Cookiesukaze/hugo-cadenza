@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程语言 on My Custom Hugo Site</title>
+    <link>https://example.org/docs/programming/languages/</link>
+    <description>Recent content in 编程语言 on My Custom Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://example.org/docs/programming/languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 基础</title>
+      <link>https://example.org/docs/programming/languages/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/programming/languages/python/</guid>
+      <description>Python 基础 Python 是一种易于学习、功能强大的编程语言。它具有高效的高级数据结构和简单但有效的面向对象编程方法。&#xA;Python 特点 简洁清晰的语法 丰富的标准库 跨平台兼容性 强大的社区支持 基本语法 变量和数据类型 # 变量赋值 x = 10 name = &amp;#34;Python&amp;#34; is_awesome = True # 数据类型 print(type(x)) # &amp;lt;class &amp;#39;int&amp;#39;&amp;gt; print(type(name)) # &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; print(type(is_awesome)) # &amp;lt;class &amp;#39;bool&amp;#39;&amp;gt; 条件语句 age = 18 if age &amp;lt; 18: print(&amp;#34;未成年&amp;#34;) elif age == 18: print(&amp;#34;刚好成年&amp;#34;) else: print(&amp;#34;成年人&amp;#34;) 循环 # for 循环 for i in range(5): print(i) # 输出 0, 1, 2, 3, 4 # while 循环 count = 0 while count &amp;lt; 5: print(count) count += 1 函数 def greet(name): &amp;#34;&amp;#34;&amp;#34;简单的问候函数&amp;#34;&amp;#34;&amp;#34; return f&amp;#34;你好，{name}！&amp;#34; # 调用函数 message = greet(&amp;#34;世界&amp;#34;) print(message) # 输出：你好，世界！ 总结 Python 是一门非常适合初学者的语言，同时也被专业开发者广泛使用。通过本文的介绍，你应该对 Python 的基本语法有了初步了解。</description>
+    </item>
+  </channel>
+</rss>
