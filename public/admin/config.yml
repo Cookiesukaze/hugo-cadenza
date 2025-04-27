@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main # 根据你的仓库主分支名称调整，可能是main或master
+
+# 当使用本地开发服务器时启用
+local_backend:
+  # 本地后端 URL
+  url: http://localhost:8081/api/v1
+
+# 媒体文件存储位置
+media_folder: "static/images/uploads" # 媒体文件将被存储在仓库的这个路径
+public_folder: "/images/uploads" # 上传的媒体文件的公共URL
+
+# 内容集合
+collections:
+  - name: "portfolio" # 用于routes的名称，例如/admin/collections/portfolio
+    label: "Portfolio" # UI中显示的名称
+    folder: "content/portfolio" # 存储文件的文件夹路径
+    create: true # 允许用户创建新文件
+    slug: "{{slug}}" # 文件名模板
+    fields: # 每个文件的字段
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "docs" # 用于routes的名称，例如/admin/collections/docs
+    label: "Documentation" # UI中显示的名称
+    folder: "content/docs" # 存储文件的文件夹路径
+    create: true # 允许用户创建新文件
+    slug: "{{slug}}" # 文件名模板
+    fields: # 每个文件的字段
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

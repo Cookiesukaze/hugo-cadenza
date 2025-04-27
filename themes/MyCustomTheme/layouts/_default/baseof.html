@@ -15,6 +15,8 @@
     <!-- Code blocks styling -->
     {{ $codeBlocks := resources.Get "css/code-blocks.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $codeBlocks.RelPermalink }}">
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="{{ if .IsHome }}home{{ else }}{{ if eq .Kind "page" }}single{{ else }}list{{ end }}{{ end }}">
     <div class="container">
@@ -52,5 +54,18 @@
 
     {{ $sectionSearchScript := resources.Get "js/section-search.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $sectionSearchScript.RelPermalink }}"></script>
+
+    <!-- Netlify Identity Redirect Script -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>

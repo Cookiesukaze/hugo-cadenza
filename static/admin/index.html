@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Include the script that enables Netlify Identity on this page -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script>
+      // 启用本地后端
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // 检测是否在本地开发环境
+      const isLocalhost = Boolean(
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1' ||
+        window.location.hostname === ''
+      );
+
+      // 初始化 CMS
+      const { CMS, initCMS } = window;
+
+      if (isLocalhost) {
+        console.log('Running in local development mode');
+        // 使用本地开发配置
+        fetch('/admin/config.development.yml')
+          .then(response => response.text())
+          .then(config => {
+            console.log('Loaded development config');
+            initCMS({ config });
+          })
+          .catch(error => {
+            console.error('Error loading development config:', error);
+            // 如果加载失败，使用默认配置
+            initCMS();
+          });
+      } else {
+        // 生产环境使用默认配置
+        initCMS();
+      }
+    </script>
+  </body>
+</html>

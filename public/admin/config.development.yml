@@ -1,0 +1,49 @@
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+
+# 媒体文件存储位置
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# 内容集合
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "docs"
+    label: "Documentation"
+    folder: "content/docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

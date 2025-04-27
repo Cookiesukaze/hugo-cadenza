@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>移动应用 on My Custom Hugo Site</title>
-    <link>https://example.org/portfolio/mobileapps/</link>
+    <link>http://localhost:33439/portfolio/mobileapps/</link>
     <description>Recent content in 移动应用 on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="https://example.org/portfolio/mobileapps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33439/portfolio/mobileapps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>健康追踪应用</title>
-      <link>https://example.org/portfolio/mobileapps/app1/</link>
+      <link>http://localhost:33439/portfolio/mobileapps/app1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/portfolio/mobileapps/app1/</guid>
+      <guid>http://localhost:33439/portfolio/mobileapps/app1/</guid>
       <description>健康追踪应用 项目概述 开发了一款健康追踪应用，帮助用户记录和分析日常健康数据。&#xA;功能特点 活动追踪（步数、距离、卡路里） 睡眠监测 饮食记录 健康数据分析和报告 个性化健康建议 技术栈 React Native Firebase Redux Native Device APIs Figma (UI/UX设计) 挑战与解决方案 挑战：需要处理和分析大量用户健康数据，同时保证应用性能和用户隐私。&#xA;解决方案：&#xA;实现高效的数据存储和检索机制 采用本地数据处理减少服务器负载 实施严格的数据加密和隐私保护措施 成果 应用商店评分 4.8/5 10万+ 下载量 用户平均每日使用时间 15 分钟 截图 </description>
     </item>
   </channel>

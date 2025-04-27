@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=33439&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1: Website Redesign - My Custom Hugo Site</title>
@@ -15,6 +15,8 @@
     
     
     <link rel="stylesheet" href="/css/code-blocks.min.8e9091e5a5f895a81ff1d4ffff059589cfcb4e1c407cbbfb5e38c2f4e6d0e5a4.css">
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="single">
     <div class="container">
@@ -335,5 +337,18 @@
 
     
     <script src="/js/section-search.min.de076fec412be0e1fd2163e3ad29b1969a8dd59d11729d75778b3f8c609b9063.js"></script>
+
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>
