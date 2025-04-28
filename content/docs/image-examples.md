@@ -1,10 +1,12 @@
 ---
-title: "图片展示示例"
-date: 2023-03-25
-tags: ["images", "examples", "gallery"]
+title: 图片展示示例
+date: 2025-04-28T09:53:00.000Z
+tags:
+  - images
+  - examples
+  - gallery
 featured: true
 ---
-
 # 图片展示示例
 
 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。
@@ -20,10 +22,10 @@ featured: true
 {{< image-fold title="Go Gopher" src="https://go.dev/blog/gopher/header.jpg" alt="Go Gopher" caption="Go 语言的吉祥物 Gopher" open=true >}}
 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。
 
-- Go 由 Google 开发
-- 它是一种静态类型的编译语言
-- 它的语法类似于 C，但具有垃圾收集、内存安全等特性
-{{< /image-fold >}}
+* Go 由 Google 开发
+* 它是一种静态类型的编译语言
+* 它的语法类似于 C，但具有垃圾收集、内存安全等特性
+  {{< /image-fold >}}
 
 ## 图片集折叠
 
