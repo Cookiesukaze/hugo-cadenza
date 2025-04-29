@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on My Custom Hugo Site</title>
-    <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</link>
+    <link>http://localhost:46243/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46243/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技术文档</title>
-      <link>http://localhost:1313/docs/</link>
+      <link>http://localhost:46243/docs/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/</guid>
+      <guid>http://localhost:46243/docs/</guid>
       <description>Technical Documentation Welcome to the technical documentation section. Here you&amp;rsquo;ll find comprehensive guides, tutorials, and technical documentation for various projects and technologies.&#xA;Documentation Categories Our documentation is organized into several main categories:&#xA;Frontend Development Documentation related to frontend technologies including:&#xA;HTML/CSS fundamentals and best practices JavaScript programming guides Frontend frameworks and libraries Responsive design techniques Backend Development Resources for server-side programming:&#xA;Database design and management API development and integration Server configuration and deployment Performance optimization techniques How to Use This Documentation Each documentation article follows a consistent structure:</description>
     </item>
   </channel>

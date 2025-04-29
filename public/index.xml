@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>全站内容 on My Custom Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:46243/</link>
     <description>Recent content in 全站内容 on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 28 Apr 2025 09:53:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46243/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django 入门</title>
-      <link>http://localhost:1313/docs/programming/frameworks/django/</link>
+      <link>http://localhost:46243/docs/programming/frameworks/django/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/programming/frameworks/django/</guid>
+      <guid>http://localhost:46243/docs/programming/frameworks/django/</guid>
       <description>Django 入门 Django 是一个高级的 Python Web 框架，它鼓励快速开发和简洁、实用的设计。&#xA;Django 特点 快速开发 安全可靠 可扩展性强 完善的文档 安装 Django 使用 pip 安装 Django：&#xA;pip install django 创建项目 django-admin startproject mysite 创建应用 cd mysite python manage.py startapp blog 定义模型 # blog/models.py from django.db import models from django.utils import timezone class Post(models.Model): title = models.CharField(max_length=200) content = models.TextField() published_date = models.DateTimeField(default=timezone.now) def __str__(self): return self.title 创建视图 # blog/views.py from django.shortcuts import render from .models import Post def post_list(request): posts = Post.</description>
     </item>
     <item>
       <title>Python 基础</title>
-      <link>http://localhost:1313/docs/programming/languages/python/</link>
+      <link>http://localhost:46243/docs/programming/languages/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/programming/languages/python/</guid>
+      <guid>http://localhost:46243/docs/programming/languages/python/</guid>
       <description>Python 基础 Python 是一种易于学习、功能强大的编程语言。它具有高效的高级数据结构和简单但有效的面向对象编程方法。&#xA;Python 特点 简洁清晰的语法 丰富的标准库 跨平台兼容性 强大的社区支持 基本语法 变量和数据类型 # 变量赋值 x = 10 name = &amp;#34;Python&amp;#34; is_awesome = True # 数据类型 print(type(x)) # &amp;lt;class &amp;#39;int&amp;#39;&amp;gt; print(type(name)) # &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; print(type(is_awesome)) # &amp;lt;class &amp;#39;bool&amp;#39;&amp;gt; 条件语句 age = 18 if age &amp;lt; 18: print(&amp;#34;未成年&amp;#34;) elif age == 18: print(&amp;#34;刚好成年&amp;#34;) else: print(&amp;#34;成年人&amp;#34;) 循环 # for 循环 for i in range(5): print(i) # 输出 0, 1, 2, 3, 4 # while 循环 count = 0 while count &amp;lt; 5: print(count) count += 1 函数 def greet(name): &amp;#34;&amp;#34;&amp;#34;简单的问候函数&amp;#34;&amp;#34;&amp;#34; return f&amp;#34;你好，{name}！&amp;#34; # 调用函数 message = greet(&amp;#34;世界&amp;#34;) print(message) # 输出：你好，世界！ 总结 Python 是一门非常适合初学者的语言，同时也被专业开发者广泛使用。通过本文的介绍，你应该对 Python 的基本语法有了初步了解。</description>
     </item>
     <item>
       <title>健康追踪应用</title>
-      <link>http://localhost:1313/portfolio/mobileapps/app1/</link>
+      <link>http://localhost:46243/portfolio/mobileapps/app1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/mobileapps/app1/</guid>
+      <guid>http://localhost:46243/portfolio/mobileapps/app1/</guid>
       <description>健康追踪应用 项目概述 开发了一款健康追踪应用，帮助用户记录和分析日常健康数据。&#xA;功能特点 活动追踪（步数、距离、卡路里） 睡眠监测 饮食记录 健康数据分析和报告 个性化健康建议 技术栈 React Native Firebase Redux Native Device APIs Figma (UI/UX设计) 挑战与解决方案 挑战：需要处理和分析大量用户健康数据，同时保证应用性能和用户隐私。&#xA;解决方案：&#xA;实现高效的数据存储和检索机制 采用本地数据处理减少服务器负载 实施严格的数据加密和隐私保护措施 成果 应用商店评分 4.8/5 10万+ 下载量 用户平均每日使用时间 15 分钟 截图 </description>
     </item>
     <item>
       <title>企业网站重设计</title>
-      <link>http://localhost:1313/portfolio/webdesign/project1/</link>
+      <link>http://localhost:46243/portfolio/webdesign/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/webdesign/project1/</guid>
+      <guid>http://localhost:46243/portfolio/webdesign/project1/</guid>
       <description>企业网站重设计 项目概述 为一家科技公司重新设计了企业网站，提升了用户体验和品牌形象。&#xA;挑战 旧网站设计过时，不符合现代审美 移动端体验差 内容组织混乱，用户难以找到所需信息 解决方案 采用现代简约设计风格 实现响应式设计，优化移动端体验 重新组织内容结构，提升信息查找效率 技术栈 HTML5/CSS3 JavaScript Bootstrap Adobe XD (设计) 成果 网站访问量增加 35% 移动端用户停留时间增加 45% 客户咨询转化率提升 20% 截图 </description>
     </item>
     <item>
       <title>图片展示示例</title>
-      <link>http://localhost:1313/docs/image-examples/</link>
+      <link>http://localhost:46243/docs/image-examples/</link>
       <pubDate>Mon, 28 Apr 2025 09:53:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/image-examples/</guid>
+      <guid>http://localhost:46243/docs/image-examples/</guid>
       <description>图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。&#xA;单张图片折叠 以下是单张图片折叠的示例：&#xA;▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。&#xA;Go 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：&#xA;▼ 编程语言标志集 Python JavaScript C&amp;#43;&amp;#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：&#xA;{{&amp;lt; image-fold title=&amp;#34;图片标题&amp;#34; src=&amp;#34;图片URL&amp;#34; alt=&amp;#34;替代文本&amp;#34; caption=&amp;#34;图片说明&amp;#34; &amp;gt;}} 可选的图片描述文本（支持Markdown格式） {{&amp;lt; /image-fold &amp;gt;}} 如果希望默认展开，可以添加 open=true 参数。&#xA;图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：</description>
     </item>
     <item>
       <title>Markdown 示例</title>
-      <link>http://localhost:1313/docs/markdown-examples/</link>
+      <link>http://localhost:46243/docs/markdown-examples/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/markdown-examples/</guid>
+      <guid>http://localhost:46243/docs/markdown-examples/</guid>
       <description>Markdown 示例 这个页面展示了各种 Markdown 格式和特殊功能的示例。&#xA;折叠式内容块 以下是折叠式内容块的示例，支持多种颜色选项：&#xA;▶ 安装为 Git 子模块 克隆仓库到您的 Git 项目中： git submodule add https://github.com/username/theme.git themes/themename 初始化和更新子模块： git submodule init git submodule update ▶ 安装为 Hugo 模块 初始化 Hugo 模块系统： hugo mod init github.com/username/yourproject 在 config.toml 中添加主题： [module] [[module.imports]] path = &amp;#34;github.com/username/theme&amp;#34; 运行 Hugo 以下载模块： hugo ▼ 手动安装 下载最新版本的主题源代码。下载链接 解压缩归档文件，将文件夹重命名为 themename 并移动到 themes/ 目录中，位于您的 Hugo 项目的根文件夹中。 继续设置主题配置文件。 更多颜色选项 折叠块支持多种颜色选项，您可以通过 color 参数指定：&#xA;▶ 紫色示例 这是一个紫色边框的折叠块。 ▶ 橙色示例 这是一个橙色边框的折叠块。 ▶ 青色示例 这是一个青色边框的折叠块。 ▶ 黄色示例 这是一个黄色边框的折叠块。 ▶ 粉色示例 这是一个粉色边框的折叠块。 ▶ 灰色示例 这是一个灰色边框的折叠块。 基本 Markdown 格式 文本格式 斜体文本 和 粗体文本</description>
     </item>
     <item>
       <title>Project 2: Mobile App Development</title>
-      <link>http://localhost:1313/portfolio/project2/</link>
+      <link>http://localhost:46243/portfolio/project2/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/project2/</guid>
+      <guid>http://localhost:46243/portfolio/project2/</guid>
       <description>Project 2: Mobile App Development Overview Development of a mobile application for task management and productivity.&#xA;Challenge Creating an intuitive interface that allows users to quickly add and organize tasks while providing powerful features for power users.&#xA;Solution I designed a clean, minimalist interface with a focus on speed and efficiency. The app uses gesture-based interactions for common tasks and provides advanced features through a simple but powerful settings menu.</description>
     </item>
     <item>
       <title>代码示例</title>
-      <link>http://localhost:1313/docs/code-examples/</link>
+      <link>http://localhost:46243/docs/code-examples/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/code-examples/</guid>
+      <guid>http://localhost:46243/docs/code-examples/</guid>
       <description>代码示例 这个页面展示了不同编程语言的代码示例，用于测试代码块的样式。&#xA;HTML 示例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;HTML Example&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;Welcome to My Website&amp;lt;/h1&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main&amp;gt; &amp;lt;section&amp;gt; &amp;lt;h2&amp;gt;About Us&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;This is a paragraph about our company.&amp;lt;/p&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;p&amp;gt;&amp;amp;copy; 2023 My Company&amp;lt;/p&amp;gt; &amp;lt;/footer&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS 示例 /* Basic reset */ * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.</description>
     </item>
     <item>
       <title>API Reference</title>
-      <link>http://localhost:1313/docs/api-reference/</link>
+      <link>http://localhost:46243/docs/api-reference/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/api-reference/</guid>
+      <guid>http://localhost:46243/docs/api-reference/</guid>
       <description>API Reference Introduction This document provides a comprehensive reference for our REST API.&#xA;Authentication All API requests require authentication using an API key. Include your API key in the header of each request:&#xA;Authorization: Bearer YOUR_API_KEY Endpoints Users Get User GET /api/v1/users/{user_id} Returns information about a specific user.&#xA;Parameters:&#xA;user_id (required): The ID of the user to retrieve Response:&#xA;{ &amp;#34;id&amp;#34;: &amp;#34;123456&amp;#34;, &amp;#34;username&amp;#34;: &amp;#34;johndoe&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;john@example.com&amp;#34;, &amp;#34;created_at&amp;#34;: &amp;#34;2023-01-15T12:00:00Z&amp;#34; } Create User POST /api/v1/users Creates a new user.</description>
     </item>
     <item>
       <title>Getting Started Guide</title>
-      <link>http://localhost:1313/docs/getting-started/</link>
+      <link>http://localhost:46243/docs/getting-started/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <guid>http://localhost:46243/docs/getting-started/</guid>
       <description>Getting Started Guide Introduction This guide will help you get started with our platform quickly and efficiently.&#xA;Prerequisites Before you begin, make sure you have the following:&#xA;A modern web browser (Chrome, Firefox, Safari, or Edge) An account on our platform Basic understanding of web technologies Installation Download the software from our website Extract the files to your desired location Run the setup program Follow the on-screen instructions Configuration Basic Configuration Open the config.</description>
     </item>
     <item>
       <title>数据库基础</title>
-      <link>http://localhost:1313/docs/backend/database-basics/</link>
+      <link>http://localhost:46243/docs/backend/database-basics/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/backend/database-basics/</guid>
+      <guid>http://localhost:46243/docs/backend/database-basics/</guid>
       <description>数据库基础 数据库是有组织地存储和管理数据的系统。在现代应用程序开发中，数据库扮演着至关重要的角色。&#xA;数据库类型 主要的数据库类型包括：&#xA;关系型数据库 关系型数据库基于关系模型，使用表格存储数据：&#xA;MySQL PostgreSQL SQLite Oracle SQL Server NoSQL数据库 NoSQL数据库不使用传统的表格模型：&#xA;文档数据库（MongoDB） 键值存储（Redis） 列存储（Cassandra） 图数据库（Neo4j） SQL基础 SQL（结构化查询语言）是用于管理关系型数据库的标准语言。&#xA;创建表 CREATE TABLE users ( id INT PRIMARY KEY, username VARCHAR(50) NOT NULL, email VARCHAR(100) UNIQUE, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); 插入数据 INSERT INTO users (id, username, email) VALUES (1, &amp;#39;johndoe&amp;#39;, &amp;#39;john@example.com&amp;#39;); 查询数据 -- 查询所有用户 SELECT * FROM users; -- 条件查询 SELECT username, email FROM users WHERE id = 1; 更新数据 UPDATE users SET email = &amp;#39;newemail@example.</description>
     </item>
     <item>
       <title>HTML 基础</title>
-      <link>http://localhost:1313/docs/frontend/html-basics/</link>
+      <link>http://localhost:46243/docs/frontend/html-basics/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/frontend/html-basics/</guid>
+      <guid>http://localhost:46243/docs/frontend/html-basics/</guid>
       <description>HTML 基础 HTML（超文本标记语言）是创建网页的标准标记语言。通过HTML，你可以创建自己的网站。&#xA;HTML 文档结构 一个基本的HTML文档结构如下：&#xA;&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;页面标题&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;我的第一个段落。&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML 元素 HTML 元素由开始标签、内容和结束标签组成：&#xA;&amp;lt;tagname&amp;gt;内容&amp;lt;/tagname&amp;gt; 常见的HTML元素包括：&#xA;标题 HTML提供了六级标题，从&amp;lt;h1&amp;gt;到&amp;lt;h6&amp;gt;：&#xA;&amp;lt;h1&amp;gt;这是一级标题&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;这是二级标题&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;这是三级标题&amp;lt;/h3&amp;gt; 段落 段落使用&amp;lt;p&amp;gt;标签定义：&#xA;&amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt; 链接 链接使用&amp;lt;a&amp;gt;标签定义：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; 图片 图片使用&amp;lt;img&amp;gt;标签插入：&#xA;&amp;lt;img src=&amp;#34;image.jpg&amp;#34; alt=&amp;#34;图片描述&amp;#34; width=&amp;#34;500&amp;#34; height=&amp;#34;300&amp;#34;&amp;gt; HTML 属性 HTML属性提供了有关HTML元素的附加信息：&#xA;属性总是在开始标签中指定 属性通常以名称/值对的形式出现，如：name=&amp;ldquo;value&amp;rdquo; 例如，链接的地址在href属性中指定：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; HTML 表单 HTML表单用于收集用户输入：&#xA;&amp;lt;form action=&amp;#34;/submit-form&amp;#34; method=&amp;#34;post&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34;&amp;gt;姓名：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;邮箱：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; HTML5 新特性 HTML5引入了许多新元素和属性，如：</description>
     </item>
     <item>
       <title>Project 1: Website Redesign</title>
-      <link>http://localhost:1313/portfolio/project1/</link>
+      <link>http://localhost:46243/portfolio/project1/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/project1/</guid>
+      <guid>http://localhost:46243/portfolio/project1/</guid>
       <description>Project 1: Website Redesign Overview This project involved redesigning a client&amp;rsquo;s website to improve user experience and modernize the visual design.&#xA;Challenge The client&amp;rsquo;s existing website was outdated, not mobile-friendly, and had poor navigation that made it difficult for users to find information.&#xA;Solution I created a responsive design with a clean, minimalist aesthetic that works well on all devices. The new navigation structure makes it easy for users to find what they&amp;rsquo;re looking for.</description>
     </item>
     <item>
       <title>搜索</title>
-      <link>http://localhost:1313/search/</link>
+      <link>http://localhost:46243/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/search/</guid>
+      <guid>http://localhost:46243/search/</guid>
       <description></description>
     </item>
   </channel>

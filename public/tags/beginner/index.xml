@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beginner on My Custom Hugo Site</title>
-    <link>http://localhost:1313/tags/beginner/</link>
+    <link>http://localhost:46243/tags/beginner/</link>
     <description>Recent content in Beginner on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46243/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started Guide</title>
-      <link>http://localhost:1313/docs/getting-started/</link>
+      <link>http://localhost:46243/docs/getting-started/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <guid>http://localhost:46243/docs/getting-started/</guid>
       <description>Getting Started Guide Introduction This guide will help you get started with our platform quickly and efficiently.&#xA;Prerequisites Before you begin, make sure you have the following:&#xA;A modern web browser (Chrome, Firefox, Safari, or Edge) An account on our platform Basic understanding of web technologies Installation Download the software from our website Extract the files to your desired location Run the setup program Follow the on-screen instructions Configuration Basic Configuration Open the config.</description>
     </item>
   </channel>

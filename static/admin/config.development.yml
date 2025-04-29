@@ -8,8 +8,8 @@ public_folder: "/images/uploads"
 
 # 内容集合
 collections:
-  - name: "settings"
-    label: "网站设置"
+  - name: "site_settings"
+    label: "网站设置与主页"
     files:
       - file: "hugo.toml"
         label: "基本设置"
@@ -30,6 +30,19 @@ collections:
             fields:
               - {label: "名称", name: "name", widget: "string"}
               - {label: "链接", name: "url", widget: "string"}
+      - file: "content/_index.md"
+        label: "主页内容"
+        name: "home"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "描述", name: "description", widget: "text"}
+          - label: "社交图标"
+            name: "socialIcons"
+            widget: "list"
+            fields:
+              - {label: "名称", name: "name", widget: "string"}
+              - {label: "链接", name: "url", widget: "string"}
+          - {label: "页面内容", name: "body", widget: "markdown"}
 
   - name: "portfolio"
     label: "Portfolio"
@@ -60,13 +73,3 @@ collections:
       - {label: "Weight", name: "weight", widget: "number", required: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
