@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前端开发 - My Custom Hugo Site</title>
     
-    <link rel="stylesheet" href="/css/main.min.b9902c86271db55e13b76db8f2c22052f4095db516a8ae516cb8406809455010.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;500&family=Source+Code+Pro:wght@400;600&display=swap">
+    
+    <link rel="stylesheet" href="/css/main.min.c22b1bc8f1bf784bb4df34b5edce85bb9c0ed11853a07fbb1156b7e043a0329d.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/social-icons.min.7c28e405599bbd407da2fd17c51cc30d881232c9a7b7c19c6b94a6138c7ddb9b.css">
+    
+    
+    <link rel="stylesheet" href="/css/code-blocks.min.8e9091e5a5f895a81ff1d4ffff059589cfcb4e1c407cbbfb5e38c2f4e6d0e5a4.css">
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="list">
     <div class="container">
@@ -13,7 +24,7 @@
 
         <main class="main">
             
-<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ Menu</button>
+<button class="mobile-menu-toggle" id="mobile-menu-toggle">☰ 菜单</button>
 <div class="article-container">
     
     <aside class="article-menu">
@@ -22,7 +33,9 @@
                 <h2 class="site-title"><a href="/">My Custom Hugo Site</a></h2>
             </div>
             <div class="menu-search">
-                <input type="text" id="menu-search-input" placeholder="Search categories...">
+                <div class="section-search">
+                    <input type="text" id="menu-search-input" placeholder="在当前区域中搜索...">
+                </div>
             </div>
             
             <div class="menu-content">
@@ -30,45 +43,393 @@
 
 
 
+<div class="menu-root">
+    <h3 class="menu-root-title">
+        <a href="/docs/" class="">
+            技术文档
+        </a>
+    </h3>
+</div>
+
+
+
+
+
+
+
 <ul class="menu-list">
     
-    <li class="menu-item menu-item-section menu-item-root">
-        <a href="/docs/">Technical Documentation</a>
-    </li>
+        
+        
+        
+        
+        
 
-    
-    
-    <li class="menu-item menu-item-page">
-        <a href="/docs/api-reference/">API Reference</a>
-    </li>
-    
-    <li class="menu-item menu-item-page">
-        <a href="/docs/getting-started/">Getting Started Guide</a>
-    </li>
-    
-    <li class="menu-item menu-item-page">
-        <a href="/docs/backend/database-basics/">数据库基础</a>
-    </li>
-    
-    <li class="menu-item menu-item-page active">
-        <a href="/docs/frontend/">前端开发</a>
-    </li>
-    
+        <li class="menu-item menu-level-1 menu-item-section active"
+            
+            data-category="docs"
+            data-title="前端开发">
+            
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle open" data-target="#section-dcc80fff93c7ce3f921aac856a0404fa">
+                        <i class="toggle-icon">−</i>
+                    </span>
+                    <a href="/docs/frontend/" class="active">
+                        <span class="menu-item-level-indicator">1</span>
+                        前端开发
+                    </a>
+                </div>
+                <div id="section-dcc80fff93c7ce3f921aac856a0404fa" class="submenu show">
+                    
 
-    
-    
-    <li class="menu-item menu-item-section menu-item-level-2 active">
-        <a href="/docs/frontend/">前端开发</a>
-    </li>
 
+
+
+<ul class="menu-list">
     
-    
-    <li class="menu-item menu-item-page menu-item-level-2-page">
-        <a href="/docs/frontend/html-basics/">HTML 基础</a>
-    </li>
-    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-2 menu-item-page "
+            data-tags="HTML 前端 Web开发"
+            data-category="docs"
+            data-title="HTML 基础">
+            
+                <a href="/docs/frontend/html-basics/" class="">
+                    <span class="menu-item-level-indicator">1.1</span>
+                    HTML 基础
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #HTML #前端 #Web开发 
+                    </span>
+                    
+                </a>
+            
+        </li>
     
 </ul>
+
+                </div>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-section "
+            
+            data-category="docs"
+            data-title="编程">
+            
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle " data-target="#section-90a73723336bb622bdcda0501ac7f097">
+                        <i class="toggle-icon">+</i>
+                    </span>
+                    <a href="/docs/programming/" class="">
+                        <span class="menu-item-level-indicator">2</span>
+                        编程
+                    </a>
+                </div>
+                <div id="section-90a73723336bb622bdcda0501ac7f097" class="submenu ">
+                    
+
+
+
+
+<ul class="menu-list">
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-2 menu-item-section "
+            
+            data-category="docs"
+            data-title="编程语言">
+            
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle " data-target="#section-c63f595603fdd921f7103cdd3a2a6c3c">
+                        <i class="toggle-icon">+</i>
+                    </span>
+                    <a href="/docs/programming/languages/" class="">
+                        <span class="menu-item-level-indicator">2.1</span>
+                        编程语言
+                    </a>
+                </div>
+                <div id="section-c63f595603fdd921f7103cdd3a2a6c3c" class="submenu ">
+                    
+
+
+
+
+<ul class="menu-list">
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-3 menu-item-page "
+            
+            data-category="docs"
+            data-title="Python 基础">
+            
+                <a href="/docs/programming/languages/python/" class="">
+                    <span class="menu-item-level-indicator">2.1.1</span>
+                    Python 基础
+                    
+                </a>
+            
+        </li>
+    
+</ul>
+
+                </div>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-2 menu-item-section "
+            
+            data-category="docs"
+            data-title="框架">
+            
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle " data-target="#section-0ac2e69543cc2197f7721b9e917e7edf">
+                        <i class="toggle-icon">+</i>
+                    </span>
+                    <a href="/docs/programming/frameworks/" class="">
+                        <span class="menu-item-level-indicator">2.2</span>
+                        框架
+                    </a>
+                </div>
+                <div id="section-0ac2e69543cc2197f7721b9e917e7edf" class="submenu ">
+                    
+
+
+
+
+<ul class="menu-list">
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-3 menu-item-page "
+            
+            data-category="docs"
+            data-title="Django 入门">
+            
+                <a href="/docs/programming/frameworks/django/" class="">
+                    <span class="menu-item-level-indicator">2.2.1</span>
+                    Django 入门
+                    
+                </a>
+            
+        </li>
+    
+</ul>
+
+                </div>
+            
+        </li>
+    
+</ul>
+
+                </div>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-section "
+            
+            data-category="docs"
+            data-title="后端开发">
+            
+                <div class="menu-item-section-header">
+                    <span class="menu-toggle " data-target="#section-12f6e7ad0e2ec2ce468478b76fa5a05c">
+                        <i class="toggle-icon">+</i>
+                    </span>
+                    <a href="/docs/backend/" class="">
+                        <span class="menu-item-level-indicator">3</span>
+                        后端开发
+                    </a>
+                </div>
+                <div id="section-12f6e7ad0e2ec2ce468478b76fa5a05c" class="submenu ">
+                    
+
+
+
+
+<ul class="menu-list">
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-2 menu-item-page "
+            data-tags="数据库 后端 SQL"
+            data-category="docs"
+            data-title="数据库基础">
+            
+                <a href="/docs/backend/database-basics/" class="">
+                    <span class="menu-item-level-indicator">3.1</span>
+                    数据库基础
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #数据库 #后端 #SQL 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+</ul>
+
+                </div>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-page "
+            data-tags="images examples gallery"
+            data-category="docs"
+            data-title="图片展示示例">
+            
+                <a href="/docs/image-examples/" class="">
+                    <span class="menu-item-level-indicator">4</span>
+                    图片展示示例
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #images #examples #gallery 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-page "
+            data-tags="markdown examples formatting"
+            data-category="docs"
+            data-title="Markdown 示例">
+            
+                <a href="/docs/markdown-examples/" class="">
+                    <span class="menu-item-level-indicator">5</span>
+                    Markdown 示例
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #markdown #examples #formatting 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-page "
+            data-tags="code examples programming"
+            data-category="docs"
+            data-title="代码示例">
+            
+                <a href="/docs/code-examples/" class="">
+                    <span class="menu-item-level-indicator">6</span>
+                    代码示例
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #code #examples #programming 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-page "
+            data-tags="api reference development"
+            data-category="docs"
+            data-title="API Reference">
+            
+                <a href="/docs/api-reference/" class="">
+                    <span class="menu-item-level-indicator">7</span>
+                    API Reference
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #api #reference #development 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+        
+        
+        
+        
+        
+
+        <li class="menu-item menu-level-1 menu-item-page "
+            data-tags="tutorial beginner setup"
+            data-category="docs"
+            data-title="Getting Started Guide">
+            
+                <a href="/docs/getting-started/" class="">
+                    <span class="menu-item-level-indicator">8</span>
+                    Getting Started Guide
+                    
+                    <span class="menu-item-tags" style="display:none;">
+                        #tutorial #beginner #setup 
+                    </span>
+                    
+                </a>
+            
+        </li>
+    
+</ul>
+
 
             </div>
         </div>
@@ -77,73 +438,47 @@
     
     <article class="article-content">
         <header class="article-header">
-            <h1 class="article-title">前端开发</h1>
+            <h1 class="article-title" id="%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91">前端开发</h1>
             
             <div class="article-description">
-                前端开发相关的文档和教程
+                前端开发相关文档
             </div>
             
         </header>
         <div class="article-body">
             
-            <h1 id="前端开发">前端开发</h1>
-<p>这个分类包含所有与前端开发相关的文档和教程。前端开发是创建网站或应用程序用户界面的实践，涉及HTML、CSS和JavaScript等技术。</p>
-<h2 id="主要技术">主要技术</h2>
-<p>前端开发涉及多种技术和工具：</p>
-<h3 id="html">HTML</h3>
-<p>HTML（超文本标记语言）是网页的基础结构：</p>
-<ul>
-<li>语义化标签的使用</li>
-<li>可访问性最佳实践</li>
-<li>表单和输入验证</li>
-<li>SEO优化结构</li>
-</ul>
-<h3 id="css">CSS</h3>
-<p>CSS（层叠样式表）负责网页的视觉呈现：</p>
-<ul>
-<li>布局技术（Flexbox、Grid）</li>
-<li>响应式设计原则</li>
-<li>CSS预处理器（Sass、Less）</li>
-<li>动画和过渡效果</li>
-</ul>
-<h3 id="javascript">JavaScript</h3>
-<p>JavaScript为网页添加交互性和动态功能：</p>
-<ul>
-<li>DOM操作和事件处理</li>
-<li>异步编程（Promises、Async/Await）</li>
-<li>API集成</li>
-<li>现代ES6+特性</li>
-</ul>
-<h2 id="前端框架">前端框架</h2>
-<p>现代前端开发通常使用框架来提高效率：</p>
-<ul>
-<li>React：组件化UI库</li>
-<li>Vue：渐进式JavaScript框架</li>
-<li>Angular：全功能前端框架</li>
-<li>Svelte：编译时框架</li>
-</ul>
-<h2 id="开发工具">开发工具</h2>
-<p>高效的前端开发依赖于各种工具：</p>
-<ul>
-<li>包管理器（npm、yarn）</li>
-<li>构建工具（Webpack、Vite）</li>
-<li>代码质量工具（ESLint、Prettier）</li>
-<li>浏览器开发者工具</li>
-</ul>
-<p>浏览下面的文章了解更多前端开发的详细信息和最佳实践。</p>
+            
+
+            
+            
+            
+
+            
+
+            <p>本节包含前端开发的相关文档和指南。</p>
 
 
+            
             
             
             <div class="child-pages">
-                <h2>Articles in this section</h2>
+                <h2>所有文章</h2>
                 <ul class="page-list">
+                    
+                    
+                        
+                    
+
+                    
+                        
+                    
+
                     
                     
                     <li class="page-item">
                         <a href="/docs/frontend/html-basics/" class="page-link">
                             <span class="page-title">HTML 基础</span>
-                            <span class="page-date">Feb 5, 2023</span>
+                            <span class="page-date">2023年02月05日</span>
                         </a>
                     </li>
                     
@@ -160,25 +495,15 @@
     <aside class="article-toc">
         <div class="article-toc-content">
             <div class="toc-header">
-                <h3>Table of Contents</h3>
+                <h3>目录</h3>
             </div>
             <div class="toc-content">
-                <nav id="TableOfContents">
-  <ul>
-    <li><a href="#主要技术">主要技术</a>
-      <ul>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#javascript">JavaScript</a></li>
-      </ul>
-    </li>
-    <li><a href="#前端框架">前端框架</a></li>
-    <li><a href="#开发工具">开发工具</a></li>
-  </ul>
-</nav>
+                
+                
+                
+                    <nav id="TableOfContents"></nav>
+                
             </div>
-
-            
         </div>
     </aside>
 </div>
@@ -194,6 +519,37 @@
         </footer>
     </div>
     
-    <script src="/js/main.min.f50b603ae772be4f9a854d3bc9c7eaaf83c699f8e296fb0a763d3fe5092f6af3.js"></script>
+    <script src="/js/main.min.440b49c6b9e0129b9f36b968594837393dcfec6ef72bd25bf6776ac5848d2d48.js"></script>
+
+    
+    <script src="/js/menu.min.e5e2842c5144571150eba5a734a85cc585e62f07a14772c328aec7701e875daa.js"></script>
+
+    
+    <script src="/js/code-blocks.min.a0ab17ba3ff65d0851b771efd4287a78b85238fea05bee7714bde65ede5d9154.js"></script>
+
+    
+    <script src="/js/details.min.fd8c0e2abdb560d01fb7cc77c64a8427cd09a1bd66a118ac8ef71a73ec760e6b.js"></script>
+
+    
+    <script src="/js/image-fold.min.dcd7f5e74780b4b960a1d6cf96f46922ab3f7602fea59bd7ad2d4edd9f9148c3.js"></script>
+
+    
+    <script src="/js/search.min.0077a69f8833361c625672437f9ffdb3aac9bf0eafe62544176d49e553e6d773.js"></script>
+
+    
+    <script src="/js/section-search.min.de076fec412be0e1fd2163e3ad29b1969a8dd59d11729d75778b3f8c609b9063.js"></script>
+
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>

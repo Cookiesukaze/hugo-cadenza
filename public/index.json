@@ -67,8 +67,8 @@
       "permalink": "http://localhost:1313/docs/image-examples/",
       "summary": "图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。\n单张图片折叠 以下是单张图片折叠的示例：\n▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。\nGo 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：\n▼ 编程语言标志集 Python JavaScript C\u0026#43;\u0026#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：\n{{\u0026lt; image-fold title=\u0026#34;图片标题\u0026#34; src=\u0026#34;图片URL\u0026#34; alt=\u0026#34;替代文本\u0026#34; caption=\u0026#34;图片说明\u0026#34; \u0026gt;}} 可选的图片描述文本（支持Markdown格式） {{\u0026lt; /image-fold \u0026gt;}} 如果希望默认展开，可以添加 open=true 参数。\n图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：",
       "content": "图片展示示例 这个页面展示了美化后的图片显示功能，包括可折叠的图片和图片集。\n单张图片折叠 以下是单张图片折叠的示例：\n▼ Hugo Logo Hugo 静态网站生成器的标志 这是 Hugo 的官方标志。Hugo 是一个用 Go 语言编写的静态网站生成器，以其速度快和灵活性而闻名。 ▼ Go Gopher Go 语言的吉祥物 Gopher 这是 Go 语言的吉祥物 Gopher。Go 是一种开源编程语言，旨在提高程序员的生产力。\nGo 由 Google 开发 它是一种静态类型的编译语言 它的语法类似于 C，但具有垃圾收集、内存安全等特性 图片集折叠 以下是图片集折叠的示例：\n▼ 编程语言标志集 Python JavaScript C\u0026#43;\u0026#43; Ruby TypeScript C# ▼ 自然风景 山脉 海洋 森林 草原 使用说明 单张图片折叠 使用 image-fold shortcode 来创建可折叠的单张图片：\n{{\u0026lt; image-fold title=\u0026#34;图片标题\u0026#34; src=\u0026#34;图片URL\u0026#34; alt=\u0026#34;替代文本\u0026#34; caption=\u0026#34;图片说明\u0026#34; \u0026gt;}} 可选的图片描述文本（支持Markdown格式） {{\u0026lt; /image-fold \u0026gt;}} 如果希望默认展开，可以添加 open=true 参数。\n图片集折叠 使用 image-gallery 和 gallery-image shortcodes 来创建可折叠的图片集：\n{{\u0026lt; image-gallery title=\u0026#34;图片集标题\u0026#34; \u0026gt;}} {{\u0026lt; gallery-image src=\u0026#34;图片1URL\u0026#34; caption=\u0026#34;图片1说明\u0026#34; \u0026gt;}} {{\u0026lt; gallery-image src=\u0026#34;图片2URL\u0026#34; caption=\u0026#34;图片2说明\u0026#34; \u0026gt;}} {{\u0026lt; gallery-image src=\u0026#34;图片3URL\u0026#34; caption=\u0026#34;图片3说明\u0026#34; \u0026gt;}} {{\u0026lt; /image-gallery \u0026gt;}} 同样，如果希望默认展开，可以添加 open=true 参数。\n特点 可折叠显示：点击标题栏可以展开或折叠图片内容 美观的样式：图片带有圆角和阴影效果 响应式设计：在不同屏幕尺寸下自动调整布局 图片说明：支持添加图片说明文字 点击放大：点击图片可以在模态框中查看大图 Markdown支持：在图片描述中可以使用Markdown格式 ",
-      "date": "2023-03-25T00:00:00Z",
-      "lastmod": "2023-03-25T00:00:00Z",
+      "date": "2025-04-28T09:53:00Z",
+      "lastmod": "2025-04-28T09:53:00Z",
       "section": "docs",
       "type": "docs",
       "kind": "page",
@@ -170,8 +170,8 @@
       "kind": "page",
       "path": "/docs/backend/database-basics",
       "relpermalink": "/docs/backend/database-basics/",
-      "parent": "技术文档",
-      "ancestors": [{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
+      "parent": "后端开发",
+      "ancestors": [{"title": "后端开发", "url": "/docs/backend/"},{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
       "categories": ["programming","backend","database"],
       "tags": ["数据库","后端","SQL"]
     },{
@@ -186,8 +186,8 @@
       "kind": "page",
       "path": "/docs/frontend/html-basics",
       "relpermalink": "/docs/frontend/html-basics/",
-      "parent": "技术文档",
-      "ancestors": [{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
+      "parent": "前端开发",
+      "ancestors": [{"title": "前端开发", "url": "/docs/frontend/"},{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
       "categories": ["programming","frontend","html"],
       "tags": ["HTML","前端","Web开发"]
     },{
@@ -206,6 +206,22 @@
       "ancestors": [{"title": "作品集", "url": "/portfolio/"},{"title": "全站内容", "url": "/"}],
       "categories": [],
       "tags": ["web design","UI/UX","responsive"]
+    },{
+      "title": "前端开发",
+      "permalink": "http://localhost:1313/docs/frontend/",
+      "summary": "本节包含前端开发的相关文档和指南。",
+      "content": "本节包含前端开发的相关文档和指南。\n",
+      "date": "2023-02-05T00:00:00Z",
+      "lastmod": "2023-02-05T00:00:00Z",
+      "section": "docs",
+      "type": "docs",
+      "kind": "section",
+      "path": "/docs/frontend",
+      "relpermalink": "/docs/frontend/",
+      "parent": "技术文档",
+      "ancestors": [{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
+      "categories": [],
+      "tags": []
     },{
       "title": "编程",
       "permalink": "http://localhost:1313/docs/programming/",
@@ -252,6 +268,22 @@
       "relpermalink": "/portfolio/webdesign/",
       "parent": "作品集",
       "ancestors": [{"title": "作品集", "url": "/portfolio/"},{"title": "全站内容", "url": "/"}],
+      "categories": [],
+      "tags": []
+    },{
+      "title": "后端开发",
+      "permalink": "http://localhost:1313/docs/backend/",
+      "summary": "本节包含后端开发的相关文档和指南。",
+      "content": "本节包含后端开发的相关文档和指南。\n",
+      "date": "2023-02-10T00:00:00Z",
+      "lastmod": "2023-02-10T00:00:00Z",
+      "section": "docs",
+      "type": "docs",
+      "kind": "section",
+      "path": "/docs/backend",
+      "relpermalink": "/docs/backend/",
+      "parent": "技术文档",
+      "ancestors": [{"title": "技术文档", "url": "/docs/"},{"title": "全站内容", "url": "/"}],
       "categories": [],
       "tags": []
     },{

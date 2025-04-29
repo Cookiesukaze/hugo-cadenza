@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>后端开发 on My Custom Hugo Site</title>
-    <link>http://localhost:44433/docs/backend/</link>
+    <link>http://localhost:1313/docs/backend/</link>
     <description>Recent content in 后端开发 on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:44433/docs/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据库基础</title>
-      <link>http://localhost:44433/docs/backend/database-basics/</link>
+      <link>http://localhost:1313/docs/backend/database-basics/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44433/docs/backend/database-basics/</guid>
+      <guid>http://localhost:1313/docs/backend/database-basics/</guid>
       <description>数据库基础 数据库是有组织地存储和管理数据的系统。在现代应用程序开发中，数据库扮演着至关重要的角色。&#xA;数据库类型 主要的数据库类型包括：&#xA;关系型数据库 关系型数据库基于关系模型，使用表格存储数据：&#xA;MySQL PostgreSQL SQLite Oracle SQL Server NoSQL数据库 NoSQL数据库不使用传统的表格模型：&#xA;文档数据库（MongoDB） 键值存储（Redis） 列存储（Cassandra） 图数据库（Neo4j） SQL基础 SQL（结构化查询语言）是用于管理关系型数据库的标准语言。&#xA;创建表 CREATE TABLE users ( id INT PRIMARY KEY, username VARCHAR(50) NOT NULL, email VARCHAR(100) UNIQUE, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); 插入数据 INSERT INTO users (id, username, email) VALUES (1, &amp;#39;johndoe&amp;#39;, &amp;#39;john@example.com&amp;#39;); 查询数据 -- 查询所有用户 SELECT * FROM users; -- 条件查询 SELECT username, email FROM users WHERE id = 1; 更新数据 UPDATE users SET email = &amp;#39;newemail@example.</description>
     </item>
   </channel>

@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/docs/frontend/</loc>
+    <lastmod>2023-02-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/docs/programming/frameworks/django/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/programming/languages/python/</loc>
@@ -16,27 +19,30 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/webdesign/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/backend/</loc>
+    <lastmod>2023-02-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/docs/programming/frameworks/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/mobileapps/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/examples/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/gallery/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/images/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/image-examples/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/app-development/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
