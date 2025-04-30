@@ -27,7 +27,7 @@
       <link>http://localhost:1313/categories/programming/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/programming/</guid>
-      <description>Programming This category contains all programming related content, including frontend and backend development.</description>
+      <description></description>
     </item>
     <item>
       <title>Frontend</title>
@@ -42,20 +42,6 @@
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/html/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>http://localhost:1313/categories/programming/backend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/programming/backend/</guid>
-      <description>Backend Development Resources related to backend development, including databases, APIs, and server-side programming.</description>
-    </item>
-    <item>
-      <title>Frontend</title>
-      <link>http://localhost:1313/categories/programming/frontend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/programming/frontend/</guid>
-      <description>Frontend Development Resources related to frontend development, including HTML, CSS, and JavaScript.</description>
     </item>
   </channel>
 </rss>
