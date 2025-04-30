@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UI/UX on My Custom Hugo Site</title>
-    <link>http://localhost:46243/tags/ui/ux/</link>
+    <link>http://localhost:1313/tags/ui/ux/</link>
     <description>Recent content in UI/UX on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 20 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:46243/tags/ui/ux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ui/ux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project 2: Mobile App Development</title>
-      <link>http://localhost:46243/portfolio/project2/</link>
+      <link>http://localhost:1313/portfolio/project2/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:46243/portfolio/project2/</guid>
+      <guid>http://localhost:1313/portfolio/project2/</guid>
       <description>Project 2: Mobile App Development Overview Development of a mobile application for task management and productivity.&#xA;Challenge Creating an intuitive interface that allows users to quickly add and organize tasks while providing powerful features for power users.&#xA;Solution I designed a clean, minimalist interface with a focus on speed and efficiency. The app uses gesture-based interactions for common tasks and provides advanced features through a simple but powerful settings menu.</description>
     </item>
     <item>
       <title>Project 1: Website Redesign</title>
-      <link>http://localhost:46243/portfolio/project1/</link>
+      <link>http://localhost:1313/portfolio/project1/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:46243/portfolio/project1/</guid>
+      <guid>http://localhost:1313/portfolio/project1/</guid>
       <description>Project 1: Website Redesign Overview This project involved redesigning a client&amp;rsquo;s website to improve user experience and modernize the visual design.&#xA;Challenge The client&amp;rsquo;s existing website was outdated, not mobile-friendly, and had poor navigation that made it difficult for users to find information.&#xA;Solution I created a responsive design with a clean, minimalist aesthetic that works well on all devices. The new navigation structure makes it easy for users to find what they&amp;rsquo;re looking for.</description>
     </item>
   </channel>

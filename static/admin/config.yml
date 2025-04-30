@@ -55,34 +55,45 @@ collections:
               - {label: "链接", name: "url", widget: "string"}
           - {label: "页面内容", name: "body", widget: "markdown"}
 
-  - name: "portfolio" # 用于routes的名称，例如/admin/collections/portfolio
-    label: "Portfolio" # UI中显示的名称
-    folder: "content/portfolio" # 存储文件的文件夹路径
-    create: true # 允许用户创建新文件
-    slug: "{{slug}}" # 文件名模板
-    fields: # 每个文件的字段
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    nested:
+      depth: 10
+      summary: "{{title}}"
+    fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
       - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: false, required: false, hint: "将此文章标记为精选，显示在首页"}
+      - {label: "Weight", name: "weight", widget: "number", required: false, hint: "控制在同级内容中的顺序"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "docs" # 用于routes的名称，例如/admin/collections/docs
-    label: "Documentation" # UI中显示的名称
-    folder: "content/docs" # 存储文件的文件夹路径
-    create: true # 允许用户创建新文件
-    slug: "{{slug}}" # 文件名模板
-    fields: # 每个文件的字段
+  - name: "docs"
+    label: "Documentation"
+    folder: "content/docs"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    nested:
+      depth: 10
+      summary: "{{title}}"
+    fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
       - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: false, required: false, hint: "将此文档标记为精选，显示在首页"}
-      - {label: "Weight", name: "weight", widget: "number", required: false}
+      - {label: "Weight", name: "weight", widget: "number", required: false, hint: "控制在同级内容中的顺序"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
