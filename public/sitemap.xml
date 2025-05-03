@@ -2,184 +2,179 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/docs/frontend/</loc>
+    <loc>https://example.org/docs/frontend/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/programming/frameworks/django/</loc>
+    <loc>https://example.org/docs/programming/frameworks/django/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/programming/languages/python/</loc>
+    <loc>https://example.org/docs/programming/languages/python/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/programming/</loc>
+    <loc>https://example.org/docs/programming/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/programming/languages/</loc>
+    <loc>https://example.org/docs/programming/languages/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/mobileapps/app1/</loc>
+    <loc>https://example.org/portfolio/mobileapps/app1/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/webdesign/project1/</loc>
+    <loc>https://example.org/portfolio/webdesign/project1/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/webdesign/</loc>
+    <loc>https://example.org/portfolio/webdesign/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/backend/</loc>
+    <loc>https://example.org/docs/backend/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/programming/frameworks/</loc>
+    <loc>https://example.org/docs/programming/frameworks/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/mobileapps/</loc>
+    <loc>https://example.org/portfolio/mobileapps/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/examples/</loc>
+    <loc>https://example.org/tags/examples/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gallery/</loc>
+    <loc>https://example.org/tags/gallery/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/images/</loc>
+    <loc>https://example.org/tags/images/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/image-examples/</loc>
+    <loc>https://example.org/docs/image-examples/</loc>
     <lastmod>2025-04-28T09:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/app-development/</loc>
+    <loc>https://example.org/tags/app-development/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/formatting/</loc>
+    <loc>https://example.org/tags/formatting/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://example.org/tags/markdown/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/markdown-examples/</loc>
+    <loc>https://example.org/docs/markdown-examples/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mobile/</loc>
+    <loc>https://example.org/tags/mobile/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/project2/</loc>
+    <loc>https://example.org/portfolio/project2/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ui/ux/</loc>
-    <lastmod>2023-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/code/</loc>
+    <loc>https://example.org/tags/code/</loc>
     <lastmod>2023-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/programming/</loc>
+    <loc>https://example.org/tags/programming/</loc>
     <lastmod>2023-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/code-examples/</loc>
+    <loc>https://example.org/docs/code-examples/</loc>
     <lastmod>2023-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
+    <loc>https://example.org/tags/api/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/api-reference/</loc>
+    <loc>https://example.org/docs/api-reference/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/development/</loc>
+    <loc>https://example.org/tags/development/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/reference/</loc>
+    <loc>https://example.org/tags/reference/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/backend/</loc>
+    <loc>https://example.org/categories/backend/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/beginner/</loc>
+    <loc>https://example.org/tags/beginner/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/database/</loc>
+    <loc>https://example.org/categories/database/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/getting-started/</loc>
+    <loc>https://example.org/docs/getting-started/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://example.org/categories/programming/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/setup/</loc>
+    <loc>https://example.org/tags/setup/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
+    <loc>https://example.org/tags/sql/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>https://example.org/tags/tutorial/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%90%8E%E7%AB%AF/</loc>
+    <loc>https://example.org/tags/%E5%90%8E%E7%AB%AF/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://example.org/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/backend/database-basics/</loc>
+    <loc>https://example.org/docs/backend/database-basics/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/frontend/</loc>
+    <loc>https://example.org/categories/frontend/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/html/</loc>
+    <loc>https://example.org/categories/html/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
+    <loc>https://example.org/tags/html/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/frontend/html-basics/</loc>
+    <loc>https://example.org/docs/frontend/html-basics/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://example.org/tags/web%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://example.org/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/project1/</loc>
+    <loc>https://example.org/portfolio/project1/</loc>
     <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/responsive/</loc>
+    <loc>https://example.org/tags/responsive/</loc>
     <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-design/</loc>
+    <loc>https://example.org/tags/web-design/</loc>
     <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://example.org/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/</loc>
+    <loc>https://example.org/docs/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://example.org/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%96%87%E6%A1%A3/</loc>
+    <loc>https://example.org/tags/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://example.org/tags/%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://example.org/tags/%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%B1%95%E7%A4%BA/</loc>
+    <loc>https://example.org/tags/%E5%B1%95%E7%A4%BA/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%BD%9C%E5%93%81%E9%9B%86/</loc>
+    <loc>https://example.org/tags/%E4%BD%9C%E5%93%81%E9%9B%86/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>https://example.org/portfolio/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/backend/</loc>
+    <loc>https://example.org/tags/ui/ux/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/frontend/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://example.org/search/</loc>
   </url>
 </urlset>

@@ -24,12 +24,6 @@ collections:
             fields:
               - {label: "欢迎标题", name: "title", widget: "string"}
               - {label: "网站描述", name: "description", widget: "text"}
-          - label: "社交图标"
-            name: "params.socialIcons"
-            widget: "list"
-            fields:
-              - {label: "名称", name: "name", widget: "string"}
-              - {label: "链接", name: "url", widget: "string"}
       - file: "content/_index.md"
         label: "主页内容"
         name: "home"

@@ -2,46 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My Custom Hugo Site</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://example.org/categories/</link>
     <description>Recent content in Categories on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Backend</title>
-      <link>http://localhost:1313/categories/backend/</link>
+      <title>backend</title>
+      <link>https://example.org/categories/backend/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/backend/</guid>
+      
+      <guid>https://example.org/categories/backend/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Database</title>
-      <link>http://localhost:1313/categories/database/</link>
+      <title>database</title>
+      <link>https://example.org/categories/database/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/database/</guid>
+      
+      <guid>https://example.org/categories/database/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
+      <title>programming</title>
+      <link>https://example.org/categories/programming/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
+      
+      <guid>https://example.org/categories/programming/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Frontend</title>
-      <link>http://localhost:1313/categories/frontend/</link>
+      <title>frontend</title>
+      <link>https://example.org/categories/frontend/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/frontend/</guid>
+      
+      <guid>https://example.org/categories/frontend/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Html</title>
-      <link>http://localhost:1313/categories/html/</link>
+      <title>html</title>
+      <link>https://example.org/categories/html/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/html/</guid>
+      
+      <guid>https://example.org/categories/html/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

@@ -2,18 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>前端开发 on My Custom Hugo Site</title>
-    <link>http://localhost:1313/docs/frontend/</link>
+    <link>https://example.org/docs/frontend/</link>
     <description>Recent content in 前端开发 on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/docs/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML 基础</title>
-      <link>http://localhost:1313/docs/frontend/html-basics/</link>
+      <link>https://example.org/docs/frontend/html-basics/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/frontend/html-basics/</guid>
-      <description>HTML 基础 HTML（超文本标记语言）是创建网页的标准标记语言。通过HTML，你可以创建自己的网站。&#xA;HTML 文档结构 一个基本的HTML文档结构如下：&#xA;&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;页面标题&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;我的第一个段落。&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML 元素 HTML 元素由开始标签、内容和结束标签组成：&#xA;&amp;lt;tagname&amp;gt;内容&amp;lt;/tagname&amp;gt; 常见的HTML元素包括：&#xA;标题 HTML提供了六级标题，从&amp;lt;h1&amp;gt;到&amp;lt;h6&amp;gt;：&#xA;&amp;lt;h1&amp;gt;这是一级标题&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;这是二级标题&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;这是三级标题&amp;lt;/h3&amp;gt; 段落 段落使用&amp;lt;p&amp;gt;标签定义：&#xA;&amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt; 链接 链接使用&amp;lt;a&amp;gt;标签定义：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; 图片 图片使用&amp;lt;img&amp;gt;标签插入：&#xA;&amp;lt;img src=&amp;#34;image.jpg&amp;#34; alt=&amp;#34;图片描述&amp;#34; width=&amp;#34;500&amp;#34; height=&amp;#34;300&amp;#34;&amp;gt; HTML 属性 HTML属性提供了有关HTML元素的附加信息：&#xA;属性总是在开始标签中指定 属性通常以名称/值对的形式出现，如：name=&amp;ldquo;value&amp;rdquo; 例如，链接的地址在href属性中指定：&#xA;&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; HTML 表单 HTML表单用于收集用户输入：&#xA;&amp;lt;form action=&amp;#34;/submit-form&amp;#34; method=&amp;#34;post&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34;&amp;gt;姓名：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;邮箱：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; HTML5 新特性 HTML5引入了许多新元素和属性，如：</description>
+      
+      <guid>https://example.org/docs/frontend/html-basics/</guid>
+      <description>HTML 基础 HTML（超文本标记语言）是创建网页的标准标记语言。通过HTML，你可以创建自己的网站。
+HTML 文档结构 一个基本的HTML文档结构如下：
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;页面标题&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;我的第一个段落。&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; HTML 元素 HTML 元素由开始标签、内容和结束标签组成：
+&amp;lt;tagname&amp;gt;内容&amp;lt;/tagname&amp;gt; 常见的HTML元素包括：
+标题 HTML提供了六级标题，从&amp;lt;h1&amp;gt;到&amp;lt;h6&amp;gt;：
+&amp;lt;h1&amp;gt;这是一级标题&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;这是二级标题&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;这是三级标题&amp;lt;/h3&amp;gt; 段落 段落使用&amp;lt;p&amp;gt;标签定义：
+&amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt; 链接 链接使用&amp;lt;a&amp;gt;标签定义：
+&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; 图片 图片使用&amp;lt;img&amp;gt;标签插入：
+&amp;lt;img src=&amp;#34;image.jpg&amp;#34; alt=&amp;#34;图片描述&amp;#34; width=&amp;#34;500&amp;#34; height=&amp;#34;300&amp;#34;&amp;gt; HTML 属性 HTML属性提供了有关HTML元素的附加信息：
+属性总是在开始标签中指定 属性通常以名称/值对的形式出现，如：name=&amp;ldquo;value&amp;rdquo; 例如，链接的地址在href属性中指定：
+&amp;lt;a href=&amp;#34;https://www.example.com&amp;#34;&amp;gt;这是一个链接&amp;lt;/a&amp;gt; HTML 表单 HTML表单用于收集用户输入：
+&amp;lt;form action=&amp;#34;/submit-form&amp;#34; method=&amp;#34;post&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34;&amp;gt;姓名：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;邮箱：&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; HTML5 新特性 HTML5引入了许多新元素和属性，如：</description>
     </item>
+    
   </channel>
 </rss>

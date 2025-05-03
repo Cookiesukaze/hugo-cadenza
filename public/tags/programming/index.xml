@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on My Custom Hugo Site</title>
-    <link>http://localhost:1313/tags/programming/</link>
-    <description>Recent content in Programming on My Custom Hugo Site</description>
+    <title>programming on My Custom Hugo Site</title>
+    <link>https://example.org/tags/programming/</link>
+    <description>Recent content in programming on My Custom Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>代码示例</title>
-      <link>http://localhost:1313/docs/code-examples/</link>
+      <link>https://example.org/docs/code-examples/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/code-examples/</guid>
-      <description>代码示例 这个页面展示了不同编程语言的代码示例，用于测试代码块的样式。&#xA;HTML 示例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;HTML Example&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;Welcome to My Website&amp;lt;/h1&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main&amp;gt; &amp;lt;section&amp;gt; &amp;lt;h2&amp;gt;About Us&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;This is a paragraph about our company.&amp;lt;/p&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;p&amp;gt;&amp;amp;copy; 2023 My Company&amp;lt;/p&amp;gt; &amp;lt;/footer&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS 示例 /* Basic reset */ * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.</description>
+      
+      <guid>https://example.org/docs/code-examples/</guid>
+      <description>代码示例 这个页面展示了不同编程语言的代码示例，用于测试代码块的样式。
+HTML 示例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;HTML Example&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;styles.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;Welcome to My Website&amp;lt;/h1&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main&amp;gt; &amp;lt;section&amp;gt; &amp;lt;h2&amp;gt;About Us&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;This is a paragraph about our company.&amp;lt;/p&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;p&amp;gt;&amp;amp;copy; 2023 My Company&amp;lt;/p&amp;gt; &amp;lt;/footer&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS 示例 /* Basic reset */ * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.</description>
     </item>
+    
   </channel>
 </rss>
